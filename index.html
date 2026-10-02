@@ -1,0 +1,1053 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#10261f">
+<meta name="description" content="Nicecy Guest Guide – places to eat, drink, shop and explore in Ho Chi Minh City.">
+<title>Nicecy Guest Guide · Eat, Drink & Explore Saigon</title>
+<style>
+:root {
+  --ink:#18231f; --muted:#69746f; --cream:#f7f3eb; --paper:#fffdf9;
+  --green:#173d31; --green2:#245846; --gold:#b89452; --line:#e6e0d5;
+  --shadow:0 10px 30px rgba(22,40,33,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+a{color:inherit}
+.hero{background:linear-gradient(135deg,#102a22,#1e493a);color:#fff;padding:44px 20px 34px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:320px;height:320px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-100px;top:-120px}
+.wrap{max-width:1180px;margin:auto}
+.kicker{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#d8c28d;font-weight:700}
+h1{font-family:Georgia,serif;font-weight:500;font-size:clamp(34px,6vw,62px);line-height:1.03;margin:10px 0}
+.hero p{max-width:700px;color:#dbe6e0;font-size:16px;margin:0 0 20px}
+.stats{display:flex;gap:10px;flex-wrap:wrap}
+.stat{border:1px solid rgba(255,255,255,.16);padding:9px 13px;border-radius:999px;background:rgba(255,255,255,.06);font-size:13px}
+.sticky{position:sticky;top:0;z-index:20;background:rgba(247,243,235,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:auto;padding:10px 12px;display:flex;gap:8px;overflow:auto;scrollbar-width:none}
+.nav button{white-space:nowrap;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:8px 12px;color:var(--ink);font-size:12px;cursor:pointer}
+main{padding:26px 16px 60px}
+.category{max-width:1180px;margin:0 auto 48px;scroll-margin-top:70px}
+.section-title{display:flex;align-items:center;gap:13px;margin-bottom:16px}
+.section-icon{font-size:28px;width:48px;height:48px;display:grid;place-items:center;background:#eee8dc;border-radius:14px}
+.section-title h2{font-family:Georgia,serif;font-weight:500;font-size:26px;margin:0}
+.section-title span:last-child{color:var(--muted);font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.place-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:17px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-height:220px}
+.place-head{display:flex;justify-content:space-between;gap:12px}
+.place-head h3{font-family:Georgia,serif;font-size:19px;line-height:1.15;margin:0 0 7px}
+.address{font-size:12px;color:var(--muted)}
+.desc{font-size:13px;color:#4e5b55;margin:12px 0}
+.meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:10px}
+.meta span{font-size:11px;color:#56615c;background:#f2eee6;border-radius:999px;padding:5px 8px}
+.actions{display:flex;align-items:center;gap:10px;margin-top:12px;padding-top:12px;border-top:1px solid var(--line);font-size:12px}
+.maps{color:var(--green2);font-weight:700;text-decoration:none}
+.actions a:last-child{margin-left:auto;color:var(--muted);text-decoration:none}
+.qr-btn{width:38px;height:38px;flex:0 0 38px;border:1px solid #d7cfbf;background:#fff;border-radius:10px;font-weight:800;font-size:11px;color:var(--green);cursor:pointer}
+.footer{background:var(--green);color:#dce7e2;padding:34px 20px;text-align:center;font-size:12px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.62);z-index:100;align-items:center;justify-content:center;padding:20px}
+.modal.show{display:flex}
+.modal-box{background:#fffdf9;border-radius:20px;padding:22px;max-width:340px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.modal-box img{width:220px;height:220px;image-rendering:auto}
+.modal-box h3{font-family:Georgia,serif;margin:8px 0 3px}
+.modal-box p{font-size:12px;color:var(--muted);margin:0 0 12px}
+.close{border:0;background:var(--green);color:#fff;border-radius:999px;padding:9px 18px;cursor:pointer}
+.note{max-width:1180px;margin:0 auto 25px;background:#fff8e9;border:1px solid #ead7a7;padding:13px 15px;border-radius:14px;font-size:12px;color:#6c5b34}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.grid{grid-template-columns:1fr}.hero{padding:34px 18px 28px}.place-card{min-height:0}.actions{font-size:11px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Nicecy Guest Experience</div>
+    <h1>Eat · Drink · Explore<br>Saigon</h1>
+    <p>Your local guide to food, drinks, shopping, wellness and things to do around Ho Chi Minh City.</p>
+    <div class="stats">
+      <span class="stat">50 recommendations</span>
+      <span class="stat">29 categories</span>
+      <span class="stat">Scan QR · Open Maps</span>
+    </div>
+  </div>
+</header>
+<div class="sticky"><div class="nav"><button onclick="document.getElementById('eat-like-local').scrollIntoView({behavior:'smooth'})">🍜 Eat Like Local</button><button onclick="document.getElementById('vietnamese-cuisine').scrollIntoView({behavior:'smooth'})">🇻🇳 Vietnamese Cuisine</button><button onclick="document.getElementById('seafood-cuisine').scrollIntoView({behavior:'smooth'})">🦐 Seafood Cuisine</button><button onclick="document.getElementById('chinese-cuisine').scrollIntoView({behavior:'smooth'})">🥢 Chinese Cuisine</button><button onclick="document.getElementById('japanese-cuisine').scrollIntoView({behavior:'smooth'})">🍣 Japanese Cuisine</button><button onclick="document.getElementById('italian-cuisine').scrollIntoView({behavior:'smooth'})">🍕 Italian Cuisine</button><button onclick="document.getElementById('steak-house').scrollIntoView({behavior:'smooth'})">🥩 Steak House</button><button onclick="document.getElementById('western-cuisine').scrollIntoView({behavior:'smooth'})">🍽️ Western Cuisine</button><button onclick="document.getElementById('thai-cuisine').scrollIntoView({behavior:'smooth'})">🌶️ Thai Cuisine</button><button onclick="document.getElementById('halal-cuisine').scrollIntoView({behavior:'smooth'})">☪️ Halal Cuisine</button><button onclick="document.getElementById('coffee-%26-tea-shop').scrollIntoView({behavior:'smooth'})">☕ Coffee &amp; Tea Shop</button><button onclick="document.getElementById('craft-beer').scrollIntoView({behavior:'smooth'})">🍺 Craft Beer</button><button onclick="document.getElementById('drinking').scrollIntoView({behavior:'smooth'})">🍻 Drinking</button><button onclick="document.getElementById('bar-%E2%80%93-lounge').scrollIntoView({behavior:'smooth'})">🍸 Bar – Lounge</button><button onclick="document.getElementById('rooftop-bar').scrollIntoView({behavior:'smooth'})">🌃 Rooftop Bar</button><button onclick="document.getElementById('dining-river-cruise').scrollIntoView({behavior:'smooth'})">🛥️ Dining River Cruise</button><button onclick="document.getElementById('shopping-mall').scrollIntoView({behavior:'smooth'})">🛍️ Shopping Mall</button><button onclick="document.getElementById('beauty-salon---body-treatment').scrollIntoView({behavior:'smooth'})">💆 Beauty Salon - Body Treatment</button><button onclick="document.getElementById('casino').scrollIntoView({behavior:'smooth'})">🎰 Casino</button><button onclick="document.getElementById('golf-course').scrollIntoView({behavior:'smooth'})">⛳ Golf Course</button><button onclick="document.getElementById('family-%26-kid-activities').scrollIntoView({behavior:'smooth'})">👨‍👩‍👧 Family &amp; Kid Activities</button><button onclick="document.getElementById('karaoke-%E2%80%93-cine').scrollIntoView({behavior:'smooth'})">🎤 Karaoke – Cine</button><button onclick="document.getElementById('temple-%26-church').scrollIntoView({behavior:'smooth'})">🛕 Temple &amp; Church</button><button onclick="document.getElementById('historical-destinations').scrollIntoView({behavior:'smooth'})">🏛️ Historical Destinations</button><button onclick="document.getElementById('pharmacy-%26-hospital').scrollIntoView({behavior:'smooth'})">🏥 Pharmacy &amp; Hospital</button><button onclick="document.getElementById('medical-service').scrollIntoView({behavior:'smooth'})">🩺 Medical Service</button><button onclick="document.getElementById('convenience-store').scrollIntoView({behavior:'smooth'})">🏪 Convenience Store</button><button onclick="document.getElementById('motorbike-for-rent').scrollIntoView({behavior:'smooth'})">🏍️ Motorbike For Rent</button><button onclick="document.getElementById('mobile-service').scrollIntoView({behavior:'smooth'})">📱 Mobile Service</button></div></div>
+<main>
+  <div class="note">💡 Tap <b>QR</b> on any place to display a scannable Google Maps code, or tap <b>Open in Google Maps</b> for instant navigation.</div>
+  
+    <section class="category" id="eat-like-local">
+      <div class="section-title">
+        <span class="section-icon">🍜</span>
+        <div><h2>EAT LIKE LOCAL</h2><span>3 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>PHỞ HÒA</h3>
+              <div class="address">📍 46A Dinh Cong Trang, D1 (2.5km ~ 11min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="PHỞ HÒA" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADeklEQVR4nO2bTW7kOAyFP0UGspRv0Edh3Szom6mOkgMMQC8DyHizoORKLxrIAJnpDqcNL6pkAuUniuTjTxXxoet8+pgc/BH8fQWPUkrZgKNs3Le5ft+O21kKx62UUsrti4D56CU3SVWq6lWi9eqMpupIHaxKchtfAcyHBTegYBw7xc7dx/Zy7mztPtC52djg2OtfXwPMP9I12KXZ0Xp1AJpgKr1m0/UlaGUnAJ77hCxn7sC/+9P/veCya0fqVZ3Wq1Td5ISlZ7Rr5ADV7Wc3AOlQx+UmCezS77To+VjZULsBV+Sq6kBVr86A0RRPs6GWIkAvHx5+LM62DajqtHyoe0QruY3WaV0OrdO07NrSRS7kjKaBDQjI4cHkVCkieEpvVtctdanLbTRdLCWrN6se2DvYuIg3oXqrUka7nhm2HDA5TEVbKHpgCU+4GzB4EJLptJvWSj4eHiylR0YJVHUtOjriALSezq6fgHNHfj93pH7uxArH7Vn9/NbBzpKwqjCpCBZZ5/pwOfCeMPuYuCLNfMdVJGCsTciG2gFok6HReji0AVKveSNXdRtNoeLLp9WZiPWskesqmIzWg5KBSUHFCeqSDjUrVEluNL3Lry0eJYxcTRtsLELyWjhuZ7lVZ7TvwIZtv/odP1vwIqIm9aliPdQ9mMcgl67DUQOM1qU+V1d9eHr4bHb9BLztJjeO2wYj9P56C+pS9uCov/wdP1dwVgurNJYPn5XDKDW0npObhdliMB04M35d/rwntGtHbpOftB7KHa1X9dF07Uku1E80lZ0Bb+U2jpdn59xtg7fdtqOUbz2i2BcB89ErmAmtA9OQndEUCYicnHYtrTLp6v5IUR6X2yoypEPts0I4sNmsd5t0VJrAM3qzGgXhaGiuAx/ar24jZX6tBw27eltVPVKPSLcT5tfR5HrX03xELogDkC5yEWc7tByzChHBB4BBrCRETVNUVB6lMxgAVGe0jJHL+TG1BIgeEI+v6VCvWYU5bKZZOrtCdvSAsqF2WMMJc1DBZ9OHNa+Szps9gUnieBnYuROtTI6X+lpiE8bv8I6fLPiYsgs+dlWGWeWjkMml6x9mC2enQ7qK5LOTm82uL0Hb4Nnv1SmlnDvnfucocKd912vC7l4MKoxrBAUbrc+ZK599n1y6vmYLmT48Us4VzqJmmM6Hlz//gPjfCP4NXYCys2UuuacAAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Phở is considered the most popular dish in Vietnamese Cuisine. This place becomes familiar to locals and foreigners who want to try a traditional Phở... BÁNH XÈO These savoury pancakes are made of flour, egg, and salt and then fried. They come stuffed with pork, vegetables, and prawns with a side of herbs and fish sauce. Wrap each morsel in lettuce and dip.</p>
+          <div class="meta"><span>🕒 06:00 – 22:30</span><span>💰 85k - 95k</span><span>☎️ 028 3829 7943</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=PH%E1%BB%9E%20H%C3%92A%2C%2046A%20Dinh%20Cong%20Trang%2C%20D1%20%282.5km%20~%2011min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>BÁNH MÌ HUỲNH HOA</h3>
+              <div class="address">📍 26 Ton That Tung, D1 (2.7km ~ 11min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="BÁNH MÌ HUỲNH HOA" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADb0lEQVR4nO2bwW0sRwxEX6sH0LE3A4fSk4FDcmrcUJQB9yigF+VD9Uj4BwMyYMNf9B/sYbTTgMQhWSwWqSa+dD1fvnYOfh38eQ8+WmvtAB7t4H4AcMDzdm+t8Thba62d38SYr17KKalLXZK0RvSca0RPlMDsknKu72DM3zrY2smjPdvZbncef8D99e1czOdtLhwD//nf+M8eRDlh9pw9WbBGAIzoUlesoZ70ar4+rpu7iFfdewL0t9+ft3xvDvJ/6Vf/BHmd06m9RnSJISm6Yud7NV9vb/acf/UBoJzVvnI6f+1chhgB9P1Y1azOCXSJEYvJMFmbXbFGSPLTalZfWC2Fkp4wQpfJi7lGMMpZnSx7FpRzDTnTtaEspChXuZBije3TLinpCphK5BtFSTRj6AOxJSnZUc1kVEUz2B4P7TpFz7mAYX5eMq/ngu54HjJpcdlaQz3nYq6KEe6izFBXYGN10W+AejzcLg4HM2AevjY/CSVO7WpW59xAfXFvXY02TL+QglZLymli1pM1BNPczDkuRcnuw3Ypp5zLQ0qUpi6TmmgWLlKS1kcLplCij36knq/dd4zoiSPcoW4XS7LSUs3qjw56d53hH7ejE5gF0SxxRm9udpUw8/P9qFpevzB0wMHuMfvbyeO04Qd34GC+Kr6JMV+9LHpvAFdc3FtrhKuYctZUFRJwly1TUIY14XmdKhbhXAVr0zDfG8cMbr2kqrCbrG3vZiwm57CM7fWsljzScuG2bOiXwAiX8nKV64XHuUYcI1o7gcV9wYJXBdCTg/lsBWeayypZTl0iElzUxQOvehGeMD5hXO44jOEKhgl5OasvDHfrYfTukjkq7BioaPVVlzd2BdAviZiCaPbD7ONSzHYnsvcWSvbXe0MjPOjZJcyzLStIJTtNhVcUDGsftuMv99uoF+HbtKvpsIxmLmrVtGKE/6COxufEZxNy1oiCVid7drmVUrAYnlxcpeQUYO8quNPcgT3CAukls5TL6wRcmo3bdO9iWUfaG1nFfP1iMZDHyYj32/0ARvSER3MJW8y6W3Zw7d74Zo3PsVc5Rvp5sEvrcT7bueP87Vwj3m8TeP5WTy3cG5XWEDaMD6092dxD7Vq+/mSkFovccbjN9FZhUd0M3GElXWHEdrXyPu3ev/oOxnz5YPv1HxD/m4N/AhHbzMhVjeBKAAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">This shop will keep you waiting in a queue for ordering a Banh Mi with crispy bread, pate, ham, pork, onion, cucumber, chilli, and pickled vegetables... CƠM TẤM THUẬN KIỀU It is considered the most popular dish in HCMC. Made from broken rice and grilled pork ribs</p>
+          <div class="meta"><span>🕒 11:00 – 21:00</span><span>💰 60k</span><span>☎️ 08 9669 8833</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=B%C3%81NH%20M%C3%8C%20HU%E1%BB%B2NH%20HOA%2C%2026%20Ton%20That%20Tung%2C%20D1%20%282.7km%20~%2011min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="http://www.banhmihuynhhoa.vn/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>HỦ TÍU NAM VANG THÀNH ĐẠT</h3>
+              <div class="address">📍 34 Co Bac, D1 (2.9km ~ 12min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="HỦ TÍU NAM VANG THÀNH ĐẠT" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVYAAAFWAQAAAAAa1IguAAAEKElEQVR4nO2bQY7rNhBEH4cCvKRuMEehbjbIzeij+AABWssBKFQWRXqyzCLOd6QvGIZg9YJuNLuqq6gk/ul1fPzjUPgd+3+N3VNKaYEjbccK3I/1ntb7sQIcKwuklFLa3mS9r4lFUSVlSYHUFEjKAaVRJDWKn9b+Dut9ZWxKG/tG0QJQ03o/Plt+bPmR0koH9rS8eA2/OhZFhZqjUpqiZqkXSeqlUVoOclR/n74eALizbwvA/fZIKW0L5OD7s1Haf7WGXxg7+0NUqXWgNKgukl6UNT4X6A/3lBKw7F+3qPnxlQMXw+2xsW/s25FSWt9mvS+JRb4CSZSW1TpVAUWK2gdqSNKp68F9kiw5A700BVCzmtMiyQFnzwMugE7NagYLBb1IURXAuD95HqSslgOjp6J2gJqlHNX1kIMr7AvDgVEjR+2l+WOSSWkuj5PnwfUg9SKzqRwVqmn2fNTg7PvCrUDKajC5hJMQdMhqisrp6yEYtLlI8WwRlVkeUoPT8+of/gC1l+Y8mEsYUoEOF6iH6pbYx5zVDBNm11KblPvs9RCYMXojZPfGgNI65MBFcgG8aJ2aJajZUozaKACq1CjNe+T0eVDQGdDQi/ok21Lz1Nm5QD1ENSz+oKSMFINWAZKu0B+sPuWAIrfH7D8OlNb94wV4tScsGL1x7AVzSCrQuQCvjpEKSw3dzEp6zuMARRfgD/NGgjpLYoxXgEfR8+PF1B8MFkxK6adPFeLsffKDImChHulr2be+f3VYAFDUW+CnWe1N1vuaWPOHqqBPAvkcMbKkQbA5/76QjBEmjZraFGAfx+3i/PPmkykVZalbki2zSKb+cPb+YP1hjpkxbD5jh9Py/OXsefhxsrwFPGQBFuiyLFeePQ9qgywNTWZoEdnarInlJXhU7SMbtmwGW6AMeysHXIFXSzlMGqHImkMvDcyuGTrV6fHCZ2ACiob0BL2IAR+1wyX0qCD7IBDeDmODZI1zQTksTJ09Dy7+eWPxITs5U6zLukSfHNvfEIm5xBQqg8vw6mZ8tBBnW6cPv08Wo+AKftYw9ynNlk5W61OBcVo8dp09D9jJ8lFJC5JPE9xDh3nF6fPgcXsa381waefiyTav0B/8x7OGpasfz5dBqq8wd8+TD/YxNbhlnVNGnXLEufPwAQMgvlfSyvEpy5XHOs6Rfq9VcVe8z3pfE+vz9qUtpXW4xR1YoO8prXXhvli9/Dy3PvkxVJc9wT0/tu/0dax0WIr0SJNv3/Nje5f1viR2ARIV0L4Ct1jhniAHx6cW6Ms9wfLne6z39bFpRWrfn+NdjO+V2yMda10mZLzZev/d2Od7B1anx3sHplXD66RewN/8wOccStNjO1bYU35sAPvXmMfLH3b/32a9r4hlmpiVoul628urfUpz1ihOXQ/p93uLv2P/dv0FRbtRL1syw64AAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">This is a special Saigon shrimp and pork chop noodles soup. Originally from Phnom Penh, Cambodia.</p>
+          <div class="meta"><span>🕒 06:00 – 04:00 the next day</span><span>💰 55k - 65kVIETNAMESE CUISINE</span><span>☎️ 0973 691 733</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=H%E1%BB%A6%20T%C3%8DU%20NAM%20VANG%20TH%C3%80NH%20%C4%90%E1%BA%A0T%2C%2034%20Co%20Bac%2C%20D1%20%282.9km%20~%2012min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="vietnamese-cuisine">
+      <div class="section-title">
+        <span class="section-icon">🇻🇳</span>
+        <div><h2>VIETNAMESE CUISINE</h2><span>4 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>CỤC GẠCH QUÁN</h3>
+              <div class="address">📍 10 Dang Tat, D1 (3.1km ~ 11min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="CỤC GẠCH QUÁN" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADe0lEQVR4nO2bTW4bSwyEvzEH8LIFvAPkKK2bGbkZdRTdoLU0QKGyIFsysrIAB476ZVYjqAFNDf+KRWoTn7quL587B/8O/q0H0QAwSQOTmyQ59ACaa3QAejwDmEcOdklw2puA98Npv7xpsDfF5bgd6oU8C5hPXhodug2g0zzoafSga/Sg28DGerbOq9tAo5t+bj8ceJXvnGj+Fz3jlx3c77fN9+C6dy5Htg68/+c2/txPf7OHS7LRaZ4WN4mmaJ73JmlBDz9t2wbY+a2i+3K08/H1/Jb3123bDt/9jF98EOU1OmCZviSAJlUhk6S1bE3hlWgueaavzGzRXFJ+uxpqyQbKUiUBkkeTBpKCDtAWQ/0CvB/6fjnaYL9sGn07sHO6/nBgB5PrfPzuZ/zag+nJSkISzaO5SUG30SWXFBCrMVISmo2e1SqaaxBN0Qp7vYdnAPOYrUmYngktgxp6NGWkx2pxfcvhruTbTSrGQjTX6EnUV0MtB4JOk8lNnjVr2t1Jf3gGMA9VrqCYJwBdY1KU0W1A8wVZipQZbCK9Z/UiLW1dbjZbaY1enUjmcEnp888A5rGea/QEm1aOVkhNHpDJfDnURFOpKJJlcmuuyuqYtJyWQkIr+0pp3I/1Olixco2JMYvXqHbjnsPpCzLSUcCTfEbLElYJLb9aLq5faNphp0f7Cdh543KkdPITsNNfz+v1XGQgRysJxSSbEwHoKaytZevKZtCZAjhg8uxHcjKyYFwru8tMYs6M9Oyvg25LshR55m1J6d5Bn31HL29fEHUp3kAO9WxAy7babbCoRsptmMUHkUFSNNHEkixFbrei3ATdRjepwplVGemU/TNXNxUZmzwtX8tqqKXk4ZFVrARSgGgeJTush9q5T3k8wEpM8Dnb9SVRJycxlWyiQRLyYOqH6+VwKRsNqma5cjWlKbiNd9eztTJ+Z50i93By+JXS2ZIeniJhFqmgp6hy42ylLD0DmMeyWStxOGM55sdZx1e0da1huM3hNeSmGTXGZU0enrsKScaSlk/67YtqKffdQgAqkNPuVorxiv31bQcJCrVks7++a4nPAOYh1Nx7rppmJm+57RwuGNeFenq1avXIPmzjLBfXvx+8Hk7X7e164Ho4cTluB2i+okZag55iJnKAlMsqt6+3WzhzeI20ko+Vb6eUZAt2mtu/f0D8bw7+AkcpvXnCejESAAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Serving delicious food and a great Vietnamese family atmosphere where you can have lunch/ dinner experience with a local family. SH GARDEN Offering unique dining experiences with many traditional Vietnamese cuisines and astonishing views of Saigon’s sunset alongside its hectic avenues.</p>
+          <div class="meta"><span>🕒 09:00 – 23:30</span><span>💰 70k - 250k</span><span>☎️ 0838 480 144</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=C%E1%BB%A4C%20G%E1%BA%A0CH%20QU%C3%81N%2C%2010%20Dang%20Tat%2C%20D1%20%283.1km%20~%2011min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="http://cucgachquan.com//" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>NGON RESTAURANT</h3>
+              <div class="address">📍 Rooftop, 158 Pasteur, D1 (1.3km ~ 6min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="NGON RESTAURANT" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADjklEQVR4nO2bTW7sOAyEP4UGeqm+QY4i32yuxj5KbkAvA8ioWZDuzGaAPCAPk2iekUV3zIUq/CsWlSY+9Zwvn7ODP4bf1/BorbUNONrGY7tenPdHa41jb621tv8QMJ99FEOSyU2SRHcLZncLFMAwSTHmTwDzS4at7Rz72dp5h2M/72zw/iq6JhkD//kZf5ehybejzS4LOPbb277xoPt3OuOXGw5AgcXjvGPS+ervdyy+0xm/1FDy/HK+ekvId/TWbsEGFec/BcznHgWAxfi3HwAWq2Yonxh0STLJJLpLrsDqtVZDHQMwuSl7lgC6ZvfZXRJg66GWLAr77MqAn+lraaZRXxB1+RckL+BdFmTAa1GWAkiiq7X99rYDHDuwwXvbOdp5/w5n/EJDFMMkiwFDcpNMPrvTBYOurGlr+RrFUDBhdp9dkwHDYky4gPtcL69rymB2h6HAYiTe2a+kXrBfe+JKt2ZUJxufjNkdWK6aVeeyGJatOZhJyCWTK6D7knlN98xiyU2Z3RXwdE/XL4f6ApicvCtLun3Q0WWrmQKrD2N2N7limHwyJmNB1NKkina6uPye00cm+ILVzGcycLkFJp9gqnSWPMv7aqgv/xa64uTVuPPVgp0rsBjZsq30UiUfoyuZ23Lz9QtdwMbjFg+AY+fY7W3fIMfMjbEd6+nhZAwrRrZpk7KgARXqq/maLGIwioJeeBP+hEz51VDHmNe8mXpR+j1VhVqLrFfN5IBFDhpjds8dUPLSdPSKNTxx1byZq64scbNrdl8xr1/gAWywMUx+3h8pMki+AcfeXvXeFqvhL3Rlk5owj79uQbuPW8BzGInHLX4KmM8+OVLl5yvUR1IUy5FkQY30Qwmf5VzPYRNKS6lW/hPA/GINT2Gh5IUcLU259Bl0X46RVtFWDMnpuiaO5xQ2chRdDXWMSQ4gTEalef+4sFFC8U8A82uoL8XMpGfbytspkmfwr4Za/iESds0asWsPQobBgnntudbJVVfJaPmniNISF/R1Sd+1p85f5iL7ucldjpF+3FVIrnLdVVABzyq3nkYakN6ELFzXjRRKH15yz5VaWdSSa8I/twDZ0ZbUSFNIKdmwEtzzwlUyluUY6dNwbN3PO2fbTZoMvbWtl4B2vvq3OOOXGT59XXLZk45mtF99bTFff9wZfkpGpSMlCY+xpm4WAFYrrUrn2uPn7QWtx1Lan/+A+N8Y/g2h6Zj6RuNCCQAAAABJRU5ErkJggg==" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">All the dining is the alfresco style in a colonial-oriented courtyard, with a few tables contained undercover inside the restaurant. Food is cooked at various stations around the restaurant. SECRET GARDEN Secret Garden Home-cooked Vietnamese Restaurant located on the rooftop of an old building in the centre of the town. Food concepts are home-cooked for real taste, bringing you a real atmosphere of Vietnamese.</p>
+          <div class="meta"><span>🕒 07:30 – 22:30</span><span>💰 90k - 350k</span><span>☎️ 028 3827 7131 (advanced booking is required)</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=NGON%20RESTAURANT%2C%20Rooftop%2C%20158%20Pasteur%2C%20D1%20%281.3km%20~%206min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>VIETNAM HOUSE</h3>
+              <div class="address">📍 93-95-97 Dong Khoi, D1 (1.4km~5min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="VIETNAM HOUSE" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADkUlEQVR4nO2bTW4jOQyFP7UKyJK+QY5C38zom9FHyQ1YywAy3iyocnp2nYYxiTVdC8NVIGC9En8eH+Umfuu6/fg9O/hr+H0N99Za24C9bVw3gGtrjf28cWU/t9ZaOz8JmN83dEnAZgHcTtdtvyi9na7vJ9qJLim/eo0PNkTp4D0dHIsBPenJwCUNvCc9fTwDmD8wHBbslxfF+2sAm0VrDYv/4Ke/0HDjOize23nbz7eT90RJz2+1xkcZonRJ5dIDlN4l8GHRFV3qkhb08GtrDfwleUnfgP3ck5e3C/uF/XxrrZ2+eo0PNkR1JcCobCZ1Bab6Xtdae105nK7oCklSUMATYJjqdjXUUk8fuNJ7OqauGBZSKF1JPVwNdTJwLJQ+LHoyLIqZzFKuWK5eo2SYhsWBUYPiLdR2D9NgPdTeZ+Wamz5Mw4QF+Cxn68V1Mst0OnbktAR8mOYLWS+uFT05GLgP0/R5mL5tsaCHz4wtTLXXVaYpsFC9yWqok4EX8wRmLH+kcbBYsF5ndZRgk6Io0X2vLbAVudnBP6nO+sPVVfCl9eL6B1xvJ9fbuer17VQpnbGfN7i1c2uXnl+9xgcbIklVs5KiZ0zqElL0e+P5DGA+FdfDYph07zjwqmJKL/deMYdXefoAC1Mh7Ok9KbqyHOraVo5KHeXSRU2r7VpOS5mdZjWb1YNUa8kMcF+10wRXVr0WpiJmVNNBucFyqD+SGP2IcWz21/N2vRyuqALdj1arSlivSJ90ZUHUUhT9rl57Tj0swDENW1RLqTwmwSRmU1KwKIq+YFyn34VQDsm0RgBzoxfk4R9xrUMxK4J6ZDmfIuozgPmU4WbaoLUGSNFO9LfLrbXbq7Cft9N1fP0aH2tYQuiUjA65LI6BV/RSxdeLaxUfozL2nOjN6NbAF43rqRvcBbTSGep5T19zzlXtlWJykmSYeoKp5PE5GngGMJ9VkGYON5UOPIXxRAoWVYYLWk8/PDzA65NDJF8PdamjpROWdjRZKPQpJS2HOrmL4VW/YHadA+63q6E+zip0aRyVi6N2l3q2oIcnTKHMq/Pq6V1R2btK+YLZbJ5Bug995mD3/lwlLj0DmE+hLiWhorj08Pt0r2SWJbsPAPxFUWcpuwKu/e2C/axX8f4a32KNDzP89Rwpx4ErZyZz71pVS/GiZ8cA99/z69lor4cajnPC87jRr/PrYyiwFur29x8Q/xvDfwDLmMRgtd6FgwAAAABJRU5ErkJggg==" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">A Vietnamese restaurant with a modern twist lies in the heart of Saigon that amazes your appetite. A dress code is required EXECUTIVE CHEF/ FOUNDER-LUKE NGUYEN HUM RESTAURANT The freshest ingredients for a culinary experience. Delicious and fulfilling, nourishes the soul with peace, healthfulness, and grace.</p>
+          <div class="meta"><span>🕒 11:30 – 14:30, 17:30 – 22:00</span><span>💰 200k – 2.000k</span><span>☎️ 028 3822 2226 (advanced booking is required)</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=VIETNAM%20HOUSE%2C%2093-95-97%20Dong%20Khoi%2C%20D1%20%281.4km~5min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="http://vietnamhousesaigon.comVEGETARIAN CUISINE" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>BÔNG SÚNG</h3>
+              <div class="address">📍 124 Nguyen Cu Trinh, D1 (3.5km~13min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="BÔNG SÚNG" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADdElEQVR4nO2bUW7kOAxEn4b+V98gR5Fv1tib0UeZG9CfAdSo/aBs788CaWCSSWvGCALDIdCuiCoWS+wiPnQ9fnwsDv4Gft/AvZRSFmAvC9sCsJVS2FfY2NdSSinri4D5eGCTBFAdeL9ty35XtHKDfS03TFL87nf8hMBSVva1lPX9xrLfO1t5+0cBVZ3Mgd/+jp8UuEGDZvLy5sBSvdy2TIDv8o6fEKjAYnsvK/tqP++Psiqw+IqP/vJAFE2SBQryxiSqJAdMMknR+iuAeQY1gEX7vx8ApkOdV9BpvXqnmWTRqAJs/FmzoY4GmNyiUb3XrGKyIP8JgM2HWjK5ollAlckl79XHEldB63U61NH6kcnQOkOu9OqZ6vl7OtT0ekCuSgLvNIuWa61gQjYLqIJmQea2BVTv1ZmYzSRLAidT3Xv1pDj+kwOzoR485pJbtF6lo2wllUk+ZYYnWKqobvKeXVj1rODAjGyWirSZBFg0RSMJXLnHZ9zX0YBe/dTekudaS8rnfcoMlyzxBknmvbrJ03CQfEY2A1pyWtbuXtUHldFpiX021EOBq1eXPFuwXlOUugWjeL0CmCd1uE55ZtE6LYldh0ydEHW0Pm5SpAEczNYsIAXMK4B5tl4rWrYeufQmP0R4G5v9FcA8EVgFLAf8ZV/ZV/b74wZswEJb9sn88JPDkfzSJ9HOSp0yZq61PnQ4SJ4NSF7ZfCWlz8lmVcMglQBFZjuS0kab0iPtdZhmmd5n9wFQPbluNtRyHVIkaTwbz2yrz2s+1KO3onHY42kl9ar0SKfc1wqyUqfqzmzPHMhsn66//gE83rRUL6WQLSfYz/uj3JfqC9vjtn2Dd/y1gVzq66zdZ9dZ/erCXgHMUxw+vEHGkQdpnQ3/MDvQyTI8nRMf+7r60N7DPfPTFZ8OtexssWmpSyVPcZIlbDo2S1fh9M3U6zAWhjEuzyO/+VBnJo+mg5YatVfPCp4P50PNwHgYR8dJvQ169wm1WVxjGJw918B+cPuEaz1mFXL/mq4D3NFcx5TnXJDTCOfcQjQy86/ue7q1PmaQOq0fsygW42BXp6X2CmCeQn15oXW01aYxoHJOKE2Kehxr5hGPaUzjZJ7PuK+v7hJydvS4p+X9lGudonQI72uk0JPfZvXNAAssSMjQ8kxT0cZxwGxsVv5+A+KPCfwXoH20fxVTV24AAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Traditional Vietnamese vegetarian dishes. Suitable for all types of customers, friends gathering, and family. 2) 155 Nguyen Dinh Chieu, D3 (3.1km ~ 12min by taxi) HOA KHAI Vegetarian restaurant offering 100+ vegan dishes on its menu at reasonable price</p>
+          <div class="meta"><span>🕒 07:30 – 22:00</span><span>💰 50k - 300k</span><span>☎️ 028 3822 0377 – 028 3636 4218</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=B%C3%94NG%20S%C3%9ANG%2C%20124%20Nguyen%20Cu%20Trinh%2C%20D1%20%283.5km~13min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="seafood-cuisine">
+      <div class="section-title">
+        <span class="section-icon">🦐</span>
+        <div><h2>SEAFOOD CUISINE</h2><span>2 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>JUMBO SEAFOOD</h3>
+              <div class="address">📍 172 Nguyen Dinh Chieu, D3 (2.3km~9min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="JUMBO SEAFOOD" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADlklEQVR4nO2bTW7kOAyFP0UGaknfIEehbxb0zeSj5Ab0sgAV3iwoVc8yA6SRRNNGoeCyuRDBHz2+pyriQ9fj5WN28Nfw+xpepZSyAVfZOLf5ouwnV+E6SimlHD/EmY8buiQ4MXX8vp/bVR77WQOg7FRJ8dVr/AOGpRxcb49yPHa43u47G3QcUydz4MvX+IcMzxrnxrlZuwU12K5j48TaN1rj5xv6Zq0GivOx8yhvWOvXkXn+Xdb4aYYoXFKNcYOpSqOWYd57/wnO/BfDs5QCvsF2HfX94Dq4jg2v4VzHo5Syf/UaP9kQ5RV06DO4VcIa1up4rbVijcKBqiY18ExsQGo9OznU9bzOopakBlQJ6NaqWse7SVK3xbx+Ae6vbbuODe/WHjsKbsF95xZs8NjP2/ti2AwF3SS1qlYD8BH00dtdUmexHo7Uuo2sVpDVjalbA++mDgt2M7UadFxBevoMerfWTdh6dc3M57FtKWAi8G4C78B6GR6OtZ6YJGMddGuSqlod29lyXqs9gShQI3PeO9SgBlhbtK5dAdnJA0l95IC6NWxdbBYMYGbClA87nuhlSa+rmoL8dLxbIzHbBKVr1nVAQlAbe9Z4rlYjMeqCXifexlo31XAAa4nKJIEvOH2ET0yizGpyyLKGaWLU9bymhs9dG3LsMvXZ1hQsV9cvmICNs19vN0nhXAdwC/R+ABu+IJcSJPqqahniQaRMLJp82lqxHqxCzho5hsBALDmLAcv18Beucn+V4tzgvjvJmr6X7TpucWLK3fyHOPPRK1mFBKLwe8/K5jYw6mrdbEya2auH5mUtNa+ePXxNjpRuylZWJ5uU31ndwHJ1TTJmSRNlJ3+28cEwsGKGh08MNnikRCxVSae0FVFKYjMU3vNeQ/JIMkExcmA5r31MHJC6bQ6bVeo4eE4la3n9Ajxefz3FDkx5SKND1a8a9OuNazkVYJBmLQft5M2exFFCU1aLNVJjtKwhbz05pSEKWFuwroeayeQJPTtYhhuo4cvVdUZTSfhPr3MScUyZAAvqXJFKfetQw3nOXM/GDivW9TirkPB7HFSA5FU0qfLVvA6A3LY0Iz61Hmp4Dt3LeT3OINVxOsVr/gz/LYus6DV4Cltj+JocaZ+ZsODONbzOQcOHnpsS9tTuV6zrEWsYRApDuSb9XROlZF1nNwvAkzn8/XDNmQumVF3Vctv6V6prSEI/wZkPG5a//4D43xj+A73lqd1VNwiUAAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Experience the best of Singapore haute cuisine at Jumbo Seafood Vietnam – the top authentic Singaporean seafood restaurant in the city. NGOC SUONG SEAFOOD &amp; BAR A new version of the outstanding seafood restaurant brand. The dishes are plated in the Western style but have an Asian taste.</p>
+          <div class="meta"><span>🕒 11:00 – 14:00, 17:00 – 22:00</span><span>💰 100k - 1.500k</span><span>☎️ 0896 889 778</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=JUMBO%20SEAFOOD%2C%20172%20Nguyen%20Dinh%20Chieu%2C%20D3%20%282.3km~9min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://hsnb.jumbo-seafood.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>RẠN BIỂN</h3>
+              <div class="address">📍 195 Nam Ky Khoi Nghia, D3 (3.3km~13min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="RẠN BIỂN" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADcElEQVR4nO2bTW7sRgyEP7kFZEkDOUCOwrlZkJv13IizNMBBZUG2nE0A+8FAnjtP8GJGw4VK/CsW24f40PV8+Zgd/DL8WQ1RAIxwcIWDY3OE102FA+D5HcB8BrVLGuHSxKTwET6kNA0JfEiKzVC/AMdxg/vz+DMfB9yfrzxf7zxucE/gcZz//TN+rSEV1UNT0pASH9Fhn5CmEYwdfQ3wuJV/R/B85QRMQ3PET/SMX2d4AoLTdJgDh8WZnJC/A5wJJh7fA8wP1PB/+wM2rOF9TWkCiQ8J0wgkpfXPu6EOTwDnH3WsXWxKm1XudkMtJS7NhGrN0KVM3a8ntp2vJWzSTndJQHvfJClt5oa+ngoSsJlQXXtoKjxtSjPx7fo1VcSG5gjHlJB4rqpOOXq/CA+ACuNi48VMhpQ2hzSCDfN6Ia2GlUVEcUXR0Sp0G0Z4mnLBr+we4WkTmzWIbZjX4YULU+LYzJ6vXXFN3PtF+EXP1MSMnrVr3MY27df1IXxIo7v2rEreTW2/vA6vLFZQpDRN0lwF3Ecl/ncA87nOZbP6VFoTsxHVx1tK2lBBspmP29txGwHc03RC2jxhBM/jdnJ//jG/CZiPXu8qqOlSR6uSY6qw387XKFB4oQNG8/AmZol34n8HMJ+KcOAExT3xt1dKHeVxA34LTnjbMcLL14mnLWqKVyUf4QrGflpKjxtexXxpKaQJ61a+JQ8fTc96qCyOKs0h1XvYLq+pieMCCHDx0pLUbG7IzTRzOZRWRHv6GJKkIuS7ob7kI5s9ZDVD8+sNbNivNS+ZdKxNbu83pTbYEXWP1aWPlaQAo4vbLMFhN9ThQ6uO2SzIpaEVO1XsqJvpItuFmsTBkwV5y34dSymyqaiA7xEbaxltw84VqyPXkQyb9XWEl99rxN4Pdauj60xOQq73UJm+4U5Ts8hnvic117qn/L5dhL8Ax6u/HQePW9Y9m9hfI6g7+VM849caUoPkaM2w95tDk3eZhe18vcTwPpkwr51mb7hKS9ktr194HMdxnACc+Mmdx62OnJUefgKP2zcB89FrnS3ssla+Xiv7WexlS5bCxT+7WTOieHhzsy15eKNeY8g6jqKlNmzJUlpAqM1OTyI2a3k9NHfs1yuvSxelF7jFzdbJ4bkjaihRtJvUfB8wF0XZLq+PX/8B8b8x/BtcXplbj4Q3fwAAAABJRU5ErkJggg==" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Spacious, comfortable, and very airy. It&#x27;s suitable for friends&#x27; gatherings, parties, and family. There are 11 VIP rooms with separate, luxurious, and cosy spaces.</p>
+          <div class="meta"><span>🕒 10:00 – 23:00</span><span>💰 500k – 3.000k</span><span>☎️ 0827 846 222</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=R%E1%BA%A0N%20BI%E1%BB%82N%2C%20195%20Nam%20Ky%20Khoi%20Nghia%2C%20D3%20%283.3km~13min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://haisanranbien.vn/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="chinese-cuisine">
+      <div class="section-title">
+        <span class="section-icon">🥢</span>
+        <div><h2>CHINESE CUISINE</h2><span>2 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>DIM TU TAC</h3>
+              <div class="address">📍 55 Dong Du, D1 (1.3km~4min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="DIM TU TAC" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmAQAAAADnvwB3AAADJklEQVR4nO2aS27rOgyGP0UGMpR30KXQOyvOzuildAf0sAAN3gFlt7OTAr1ILBwhyMPhgMTPx09SJfj72W8PCME/qWdKbaWUMsHEyrbs87rP67QtE7AtpZRSlhfW/qETJhFRjTDxdnhuC0e8RY0IE39V7R+XKmUByrwCEQFSbb3bCrCV6Wl6/bqU1IhpW8qMN93LAsK2PF+vX5Ca+mfTfTZYfSpQfGJ/s/JEvf6PeIxwJKMyTGro+XyIeFxLKWzL3QCZEtrtfYJpW/ZSyvzS2j9yIo/hSL7CJIwa6q3/eXEcv9WOCMABqBG0qKE1lDaAjdQEzqgmNK1GDa0GCC2GsFEitIbWiIQvTDqsTWnhA9gYAYRBC5pGhCNANWgK1CHikaYgiVo18Q6l1AiHIXDUnkhNnPTbyDCMJLFcvT6ShoB4i+6cJt7UWxJXxqgdQMLnUA1HamiEZk25fjzeYK2W3KbQ4vNNq7HP7DNl5vMt9jJC/+gtHOkZNTtHAByyoFwcR5J4Z8WPXhbDM0779+vnnNAwIvTIqJqmAd7UMwW9qvaP+2qCeLZXHA4cBunDr6r9T3iOnFBm35HpNJ9fn6/eYAUmZNoWtve7McH+ppl2JuRpev2aFBGRvb83TVKXPQhJ120AHDkskt5oAIgj3VEZhMudVcOBpjkB6LOdiBHy6sHZvGkS1Kz7Z881Qt9hUq0Tm+SujpythzcdAUcTkBoK4nyNqvK92hj1UWnqJzu1vubIKUfvml9V+8dt7AF4Dq9C03tHyqs19FvHITWnWEYCOkLOOYYbGX3JyaOXj4R1BBu9F3386Kr6KNIAuf6+o3O5LIjVSATT2K+fr6r9D/IquaLKqqFxbK/6XuDyON7Y3h3KvDrcP8peljJLmZlYU+JzfmXtHzrH3kr4trfqGZVj7vqq2v+Ek2eS0aN2cKyxpJpcv7e69a4KPmeh/bkbDt40r0A4K9sIs8djmHPOdo6iCYyx7zhsTKP6WKCzAvURZo9fUnsp1WQvS2bU+Chsy/1jgPs5570OPW8FnCvInoIG4HIG9EX52WedS+TcZ13cxvLvbucQUv8BCXAg+1oxxL0AAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">New unexpected flavours and experiences. A blend of uniqueness to our guests, and a different type of contemporary Cantonese cuisine and dim sum. SHANG PALACE The fine dining, an extensive menu, featuring many signature dishes from Beijing Roasted Duck, and live seafood to 50 Dim Sum delights</p>
+          <div class="meta"><span>🕒 10:00 – 22:00 (Mon-Sat), 09:00 – 22:00 (Sun &amp; Holidays)</span><span>💰 50k - 500k</span><span>☎️ 028 3826 6668</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=DIM%20TU%20TAC%2C%2055%20Dong%20Du%2C%20D1%20%281.3km~4min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://www.dimtutac.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>SAN FU LOU</h3>
+              <div class="address">📍 1st floor AB Tower, 76A Le Lai (3.1km~9min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="SAN FU LOU" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADl0lEQVR4nO2bzY0bORCFv3I1MEd2Bg6FnYFDMhzSZlAKxQEYYB8XYOPtoUiNjyNgjBlx3RCEVqsOfKq/V4+UiTdd15e32cFfw89reJqZbcBpG7dtPL+Z2WXGeZiZ2fEkYN5uWCUBW4kO137bTrv26ooXhe24pPbRa3xnww0wKue3y6A0zqNvbJio/1rtG5y7/3oOMI8b3nqJzq0XeYMSG7y0GyU+0RrfzXDmMfXl1+6drWPgDc5vnfD2Cdb4Z1Brgr+sXvs/3jGrnR/br8M7FHE+B5hHDG9mBkD1hv/8znl4Yzu/Q+U8LjPbP3qN72yI8mq4BFUKl1wBuMLH1+rPAOYB1K0CroDaoZfIj95qf/12OdSSK3pRL+rULF+dmh+l6EBZDnWjF3mrI8hH5xIlvFVvqFW1uhpqDS+rVQb82qmvmd6A9VBHLwIooYYUalCCog7e6qLVDG8kwHRuehzoRS6NX+AZwDyW1wzgFI0foahDprakvl6EZyIXeavZv9LdyuZVApatZi65BPg9tam9ZI5rxX4dM54lhSt6uhso6qOsrefroEROlNmpXZFhr1ZdkmLJGt5LqNUkKpKSlHZqvo/XM4B5yNfZnpRNCqDee7c3XPIFq1lQ4k5Ke4k+Q70z2taC1ayNicNn6YbZuCVvrNm5GknC1Wr26MnQQpIyAFbL6y8UvTQ2boDtwI3zANTIm4360p4FzFuvjOrZpEQZxQ3qfeZasHMpXvN6UBTGlJ33S3auqRT1Ml08KAqDoyYhfwYwjylIrXqr2aEokWUt5+sUThes4YrUxwYhGQT1lZlnMV8N9QjmyO7ci6ToJXzMYrEqI+1DE9ZdL00vZ8x7Y8G8fq1jZKjf+1dS8ZxNlkOdSoL6vAfuee0aDG051PV3GWEMX5OW575AX08tnDHss4gNgXQU9iGPL4c629PcxZtPEu+dt6yHOimKNE4paKjE0e/T94K+Ds1mnfD7b8owc/tjPdQpm0xhMKY8jo8dgViwmg0iqmRl+TCnTldS8TX3r+dZhdAEm/sgs6at17nm2cIS116308wOzuPaAS47gA2283gSMG+91LJ619zigSEFJ2HzVXUzMDuAPIAk6TKj/Li+6jKDm+14+/A1/iHDWwfbMTOXOlU/bSu69grY1/gUa3w3wzxlVP2uijeAPL0wWcqKex+Z11NRGdpg0f0czqIzFzAIyZCPxshZfQoLy1Uz+/sPiP+N4X8B/p98jWZ+KwAAAABJRU5ErkJggg==" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">The slogan “Delectable, nutritional, hygienic” – is the 3 blessings for our customers.</p>
+          <div class="meta"><span>🕒 07:00 – 03:00 the next day</span><span>💰 30k - 190k</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=SAN%20FU%20LOU%2C%201st%20floor%20AB%20Tower%2C%2076A%20Le%20Lai%20%283.1km~9min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://sanfulou.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="japanese-cuisine">
+      <div class="section-title">
+        <span class="section-icon">🍣</span>
+        <div><h2>JAPANESE CUISINE</h2><span>3 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>YEN SUSHI &amp; SAKE PUB</h3>
+              <div class="address">📍 08 Dong Khoi, D.1 (1.4km~5min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="YEN SUSHI &amp; SAKE PUB" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADi0lEQVR4nO1bQY7jRgysXgrwkf7BPIX+WTA/o57iH9DHAWhUDmRr9xJgHEwwq84KhmFLBKwSm2Sx2B7Ep47nj8/ZAX8Mf1/DxxhjbAAeY8O+zQvjuj/HwOM2xhjjdhIwnzc0ksAOJWDP6749xvO6S0Do4wohGd99j19sCIYBJgEAqQ5YAhJgWCoTJgEJyzOA+ReGqbwEUt8l8HzzTf1yH1D/ne7xqwyPOIbchzxukvsAyvUfW3/4b376mw1JBwDlx5s/ryYkgI/rvtVDUeb33+PXGoIBABL2Ty8AwGJxDdYRlgADJIWscBa69GWuhjoMgJASgHp/jY7oRF9dDTUp9AptRkcxq0ZXKVeHrofaE4By1mgvvO13Jev8GcC8tMJTmUohUz1hqcSM8XJ6rpfNwo70lepCl0Aqi6e19xeMa5cAA6kkmTBh5TRL9VQClivGNQPCDudKaFBPoHh4v84A5qUcXrFclAxoL5NEr/MVs9lcz4VaAgmTODovoBLdGcC8xki1ixfpUM8q2WFCT3XomtysiEq10lW4i34zIGQthiVRM8CZyTuW+1EgYQv6mg4YlEKf1NSgXiRNwjqtnQHMa92HevOTAghAXciE9UNYr3KFNfGGJZB1Vkl6N2JL1uto4Dk/S7fY3Xd3sJ8BzAuGylKKLnQoAeBxw2NIAI8BYINd7ovp4ZhE1CblroVtVbMSVs3XWr4Gww7ZpHQkAFCvvpvz0nqoDyZWdJRh9ShIVuVabgpQLMVRDFwJZZ+pGD+67DOAeVE3K43UJEzoJZQBSC0evqaqUMt7UjIKPbsT4RyBredrJ9kawoRcmlJ9XbP7oKdO3QxWsnAx0p+Jbj3UUe89+6hM3r4Gag2sGtdNwtVbB57dR8X1cvX6B4BN3xO4sPYq2CUg99vHuAnfu5x9/z1+rWHNPqw9qy4zzI8zJamt5etj9uGoFV4Zu0mLl5K2ZlxXBpvqaD2Hg571mTOAeU1BUlaxzl+GAlJUvDy+HuqA9DB3ykc9zrY5F1hvD9LPweURwg05erV34J8BzKsspXZiVE6TsFJNS0FatF4bydpO2fus1CV2ud8AbId+eBIwnzzm3sIu2T3tqhSHlk8XjOuJuuvyjPSu1wFgRY30l2Nc90vYGON53T+utj3+Gm+e6nJfTyOd0z3tfUc559dCFh1dsl5jbjArRSVn4ym9bcOX01LGn39A/G8M/wYxsbIHsrAC4AAAAABJRU5ErkJggg==" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Combination of traditional &amp; modern Japanese style restaurant which brings the unique atmosphere &amp; variety of delicious gourmet dishes of Japanese cuisine. HOKKAIDO SACHI The criterion brings authentic Japanese cuisine to Vietnam, they use only the finest fresh ingredients, which are imported directly from the seafood island. Other luxury items are highly selected from locals, and cooked by expert</p>
+          <div class="meta"><span>🕒 10:00 – 14:00, 17:00 – 22:00</span><span>💰 150k – 500k (Omakase is available in Ba Huyen Thanh Quan store only)</span><span>☎️ 1900 066 890 (advanced booking is required)</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=YEN%20SUSHI%20%26%20SAKE%20PUB%2C%2008%20Dong%20Khoi%2C%20D.1%20%281.4km~5min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://booking.yensushisake.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>Japanese.</h3>
+              <div class="address">📍 40 – 42 Dong Du, D.1 (1.2km~4min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="Japanese." data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADfUlEQVR4nO2bTW7kOAyFP4cGZinfiL5ZMDdjjtI3kJcBWHizoOTJsgPUIImmAy+qKlyIRYnvh6pN/Nbf4+X34uBP4HcNRB3AOtZd3cElSaJFgroD4PkTkvlM1i7JuqsjhUm0MEmdbAFukvpiWb8A23bS/t7hcZDXmTjXtrfYIYFr279+jc8NrD3s1skm62QL9bHhTVEf2oq1Bmhhncfh9uvcDmiRvL0fWP9Ga3xe4DzX8zibwiTrblLiJi16rt+2beM67dcr18n1ynUCXOdfHa7zsW3b8dVrfHIghVMTv1zdTRonHbKN/69Va9SdFsyuZQrApGxBkyRT5Hp4raAqXpDdPSFbSJIiQYpsy9VaShycpmyDnFTK1p0WkhbMerIyjb5N4lVl66i7dWfBrAuUPcE0D3IbPLyqv2I3AyjITrxQe7zoTpV+NbyubuamoEU2ZRX91l/drbPgDlfUA65OUvQ7JBVkw3o8vBhpWHdJ4EVLAJqsO3jW8xOS+RRygWeLbJHAONrBbHQlulfLemzjW4MMksZHrrLauX6haW9S53HwfrzltSUUWO+wX9t2fP0anx340Tcj8WzFwKPEJi2yxZLIVZpLnXLJEm7U1lTZq2VdiAwfHFGsU3qzkGtJblac5FYc9qGtFVFZjqW8VEF32LZtv14TykvRr/NxePW0r1/jkwPvWpfCojTI1JhR22BJllI7+dbXFA8fGx5gObwufe3lqFj3UlglumsCsqJHOnv48EyiqDgtylugyNt6tS5cHufax2xrkhZTVOlXy7rPF1JpkDHoUdTb+lqWzHqy0GGUZYvEs4V1T5Z0FQZO0VTiy3oN+8KGZ7jiDtcwjmAONOcUe1hqS2Z9zz5UxR1Cu6zR6mlLZl3D6/KBTVH6awiQNmad62WdLZjbW6OhYX0AN/iC91JUrXsUt5IdfGy0uCV5eOieYzL8hEnLRxtfEblGQSvNidQaV7A62dZzCyl9YQpwgCZgDgJiyLEFd3jdVaj6FjmRSXW6C7YWzLoDw+2/xfWA77q9UN7pT0jmc/pasumRzm5WWowafi2H1y+Mu4VR7xN/bBs4vO0tkrft8G+wxv8m8DoH8b5Ok6TgOhPfWyS8H99ijc8L/PdGpU3dMcZ5s4ePgchPSObT5/p+OqPoQ3N53b9aLmvgvpoyhx23mTBHP2tlvf35BcT/JvAfnzDGuxVsEwkAAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">SUSHI TEI A good variety of 300 dishes on the grand menu, lunch sets with good prices, a menu for party celebrations and a special menu for Spring - Summer - Autumn - Winter.</p>
+          <div class="meta"><span>🕒 10:30 – 23:00</span><span>💰 150k - 500k</span><span>☎️ 028 3822 5396 - 028 3822 5397</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=Japanese.%2C%2040%20%E2%80%93%2042%20Dong%20Du%2C%20D.1%20%281.2km~4min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://sushihokkaidosachi.com.vn/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>CHIYODA SUSHI</h3>
+              <div class="address">📍 254 Le Thanh Ton, D.1 (1.8km~7min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="CHIYODA SUSHI" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADZklEQVR4nO2bzY0jRwyFv3L1ncrAodRksCEtHJiBEuBEHMAA1HEBCs8HslpzWWBk2PCqvA0dWlId+ol/j49UE5+67r987hz8PPjjHry11toB3NrB9VhftMv13hq3t9Zaa28vAuazl3xI6pI0JYXN7oTNLsmB0SX5iFcA89TB1t64vd3b13a5Hrev3y4cEAAjSB/4z5/xnz2IfMDoDjblYDPvu9SdMHWn72brM44RVxh/OPcL/c8v3L4Es/sP8Iz/Xlz7CJvYDFOXuhQ2gbzfLq6RA3Qf33sBsB3qvBygexm3+whTQK+vtRtqH0DX7D6wKU0gPVxOmOrtK4B5ytbdhzTlI0ySgDAFA6qUY9uhLk4yAzDJR5ITyKAeATtmsxEJtqw8uxQV41OSNGPHbBamrgmjbkyYsBmMMNXv8ApgnkOd9csmNmFkZkuHz+IVO8Z1ObPTz6A2BSRjCdvSw7PJUlr5wcml7g8Osx1qsVgoZAabKg9/dCK7oXbKpiZpJlHJalVs3PbkZtVLMpTcW0r6nXFdpn8FMM+xlLL46D6wtG/FdWkL++VwKYvUadlMaGEzoCd72RF11wybmczPnJZ4JSU13Q11pmtG2AxbLWepCqM7MLaM6yQnXVM+sk5hgspvcrZjKQemA4738Xujv5diBvS4dgEc7+Owudvs49buFwIOBvDt19+wCdf7hXtr7UL2Xy8C5rNXshQY2VHCgEzpM3vPdPW9PDxVBcmRkxk7Y7kEllNGewUwf2MKUCqKVc1KEelBy18BzLOqgjSzRnfNs9HGipBvyMOz5/LUEMhfIEWVSMLmbKmHQwX1CbarFKT0/x09fC7djGDIOblKRnp+shvq7K+XenbKCKUWZlzviXqkGlzC+NJFE2/fUhleuD5owlqpe/allm+H+iGTZuVKHWl11rMk01cA82w2k1enmRsLQWnFpaTtZ+sybpXsFcvVX7PklP1QYwpG0rO0LEsazdnfhqhrUl8K4dlzSTnMhU3n12nTpR3Nvtja6r92zGYOkLaurQzPAd+H6d6O9TrXFTABQU4BKon1PXWzs78uGtZrL2VmDk9P2LByLdRVtdfe0RoEjNhy9uHnCsraRKJWj4qV2dxSQcrxR41+yrg159p4ukfu3vjHsvVhQ2PDnqv9/AfE/+bgXwzl3IquKJFNAAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Chiyoda Sushi would like to deliver genuine Japan. More than just taste, to experience &quot;Japan&quot;</p>
+          <div class="meta"><span>🕒 11:00 – 23:00</span><span>💰 150k - 300k</span><span>☎️ 028 3535 8499</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=CHIYODA%20SUSHI%2C%20254%20Le%20Thanh%20Ton%2C%20D.1%20%281.8km~7min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://chiyodasushi.vn/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="italian-cuisine">
+      <div class="section-title">
+        <span class="section-icon">🍕</span>
+        <div><h2>ITALIAN CUISINE</h2><span>1 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>CARPACCIO</h3>
+              <div class="address">📍 11 Dong Du, D.1 (1.2km~4min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="CARPACCIO" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmAQAAAADnvwB3AAADKklEQVR4nO2aUYocOwxFj8cF+XTBLGCWooa3gCypmSVlB27Idh64PgdU3HzIrgQCLz2Ql+kyKZqmqdaHhOSrqysn8etnf7rDCP5afZwVagBZyi1eGEW5WVZVs3jjj+r93TGapNxM8VEFsuTgRVlSmyFGsNygVDXAHCPCLMqNfPoYl+OXIAGlpvL6z78rwHb5ML/+D6uitJJVfUts131lX2/LT1Z/3q/fYTXOo6qDGmqmhhqSpDnO4xPcUkps10/NFmyBBVuwZbss22VPKa0P7f1dVkWSnNu+8vZS31YcHPaXVyeyWR/Y+7ueo3cErjoAUaJAVqXo5LWKJEr1UnMzxygCssZ30QwxNoLVUGpuRpGaRVsEKPJZYvRSKcqqkhx6mKpZNev8MUpgkcogNg6OqVmW1Jgjj5LUoAhM6hXrRWo92PPHaGrkyFdR1KdjXgQGE+RxARI4orFwAd6SfdUtN7KzP39ZyuN6/45abX3K8KLeJUv1Ii81S+efO+ioAnESs+QxakWhYpoDV4tys+gawQFgJBfzCXSA6ICMhjiwNKAVmCHGZg5gijEKGP2xG0xRq6Pjd9YaKBTEIPrmyWN8YkufGgv4dl22676yYPtLn0EW7KP8+n1W3/NIqQGnwWAHyZkgj0h1VCZZFRjSnB0y3QQxEqSUMWGpHmRgGg4QSYx2n7uE1XWAWeaO3v17+oDRH4GuDzyq9++o1VLHSQx9o5frkdbTx9igKLS43MUrhbATYDsFripCy61LHH781eL77LXarYLO7Sv7Sgg7udn+oizt68N7/6una/7NKL1lxF7gUCNnOI+SOqJaaB2HxDqmyLPXaghWY5Lq4BOwQ25Mw+XAvFQvVQ2pHmvlQNrz1+oT29VhgdxIq6V0SSntK2kF2FOaBnOCr46JwwJ8jhnk5Hn84V5HMLpmx5jsWKcEj+r9u/hqrKhiLzCWyPX7ePWo3t8fI4xlh4YoFxsBYAad/EerG9slNDqwt7UfVbbLKbz/j2fkMZIYa9YqDdWx1PPX6gIIFm6+ffbnV8CfAbzfXLHsZ78TOHC1QakxS441Vs1tjj1y+nu3cwqrb2hkBst0K+4UAAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Where traditional pizzas, handmade pasta, classic Italian cocktails and warm service combine to create a cosy and intimate dining experience. CIAO BELLA Authentic Italian cuisine in the heart of Saigon. Pizza, Pasta, 3 Course Lunch... Drinks: cocktails, beer, smoothies, juice,…</p>
+          <div class="meta"><span>🕒 10:00 – 22:00</span><span>💰 50k - 400k</span><span>☎️ 0899 529 526 - 028 3823 8998</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=CARPACCIO%2C%2011%20Dong%20Du%2C%20D.1%20%281.2km~4min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://www.carpaccio.com.vn/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="steak-house">
+      <div class="section-title">
+        <span class="section-icon">🥩</span>
+        <div><h2>STEAK HOUSE</h2><span>2 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>EL GAUCHO</h3>
+              <div class="address">📍 109 Ly Tu Trong, D1 (2.1km~9min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="EL GAUCHO" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmAQAAAADnvwB3AAADKklEQVR4nO2aTYojSQyFv6hIqKUS5gB1lPDNmrpZ5FHqBvLSoOT1QpHZtWgYN1ND2UEnJm2wFhL6eU8vooh/f/aXO4zgr9V3Wl1LKWUB2PaVfd3Kui2wANdLKaWUywN7f9cjb5KqAy1MYQqoUkCYqiRv8aje329VygVasHEtrx8F2r5ur94ArmX5Nr++3qpKi2l/E/ZeHdi4Xh7Ar/9utYxv6/s/DsRS4Mde4E3lG/36P/pRHcjukyN1qUtz9CNygOrttx8Anj3GF0ySAm4rWN9XAgL2t/ewLknqD+z9Xc9n7KgarKeqZxKrOqYnzyOSoGXKwoRJPvCxSpjmiLFKmbgqVSlMv5oxWcGjen93jD1zl++gYare5JzD9uljdLAOrfqIDlPQMq1yZshjoqGPSMcgNYWNAOsM+DjKsqqH9SpVJwATNKzPUKvq+Q7rkWBxjNkcQTNwAAhYaK9O9XZbkd6rs6/c1u1WygwcQP1Ew6AldgRAy0GkGWpVVRqxWJe3bMxs0rAJajWHahtBOVU92d2QBfL9qN7fP1dPshq0XEPkLbGDOTiABAM+5FRviSZYHyE/fR5fuF6qs0BcfwC3lQX2t66PC7DQvsuvr7NKfGxykgBk7qq36hwJffY8kgsykEiRqBFw9GaLCeaqtwwkU4b1mjzceiSyTMBX1YM2fpiqc0pV0OpEe0dYrycsQm5Yg5PPkEdhHeuYOKKrTmpZ03A5bJxupNB60ht5G6rdo3r/Jzwna3JwuU9/AZP0Y1UPWtXYH5Wqo7ewI62P6v0f4KON3T+sh3Wsf55CU/DV3DsEnGpVcp4UWueYq/Kh29TjcGectPqxQT+q93dbbWVFH5e4ljz1kLf6canSvrJAfJdfX2aFvA3dONUqSGp3cFem0AGU5Rq05HUaJIdzB3n6GB0gmzG53LFYcYrnTx7jS2rjsN1W9nWTE2xhWqwDkbcCHtj7e56xX6RcbOP8UQcTYAaec1ptcS36KDoqdl9JufX583hatYWWN3P2UoCFrTq3MsH9nF/3OlKEzLmatCcOYvDktXre68iFsafkmMR1nAs8fT+Wv3c7p7D6CTc8FhNunReoAAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">The finest steakhouse-style food - natural Prime Black Angus US grain-fed, Australian Black Angus grass-fed, and Pure Blood Australian Wagyu, all Halal certified MOO BEEF STEAK Plain and simple. Meats are handpicked for quality and premium character</p>
+          <div class="meta"><span>🕒 11:00 – late night</span><span>💰 500k – 5.000k</span><span>☎️ 028 3827 2090</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=EL%20GAUCHO%2C%20109%20Ly%20Tu%20Trong%2C%20D1%20%282.1km~9min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="http://www.elgaucho.asia" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>TOPPING BEEF</h3>
+              <div class="address">📍 106 NTMK, D3 (2.2km~10min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="TOPPING BEEF" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOAQAAAABQysQIAAACj0lEQVR4nO2aQYpcPQyEvxc9yFIDOcAcRX2znCk38BxlDhBQLwNqKgv5TZYT+P+QEcQr89oLF7LKVeU+xDvj8em9FfBvyZ9cghLAtAqKsAyTICwDgKiPtN3fQxSSTCqiCEn46i8mKUcigjBJCb4ahUm4LLF5iN6WvODLXm/cj8fTy4/j4H77a3v5n5ac968FBbhOV/fXX9rLf1ly9VGiRPuwReOa2Uef4OU4DoiTOO83e70BnzPs9fY4juPpw2333aE9VrOcJRD4gugfptUIZZSvPnVFlK8CiILymYi6iaQitLtpKcMSAB+IKENagGnZvl6XJdWTiTVKylf5AgpMS4kyTKsV0TxEWnVRQXOCEksKytdA9u6uQVJ5M97qPpJkY08dBFt+B75wSbJNDgNrlPEmG+Dius0SQ9l7AbAZr1y6yLxcNZO9cZW3O48m7caCr5p46iTTamdkiWmVXwSezOQ6dVFaDnVdej5XBdWehmW0lShfTd0ja5R0vPCL6zKkZU0UE/soaRLYssGXpAvmmsl1lKsVXTOeNUaiXEO1dxNdF0XbKO3AYWAWRHuHxnKFWiEtXLt8H2m7v1mjjk87NlEGYIklU7nuyoeVsJUDSuzSEvMQJRDN1ZbxRhTbwE5EdDnxuvjBkiKAdhbzEOV+j7CM9kd2fSmm6rpfVw9R29VuET4SUe4XlnLtYOHS4RAjT12PjHLZlTPsTDVjYI1O7k+A1SJffhzg3w6ivlAn53cOz2nvsG9vE4GrOVxtKIi5mqHvow66u3c6r+uDNxVRE/glhNqbW8ZID3vVCG8UNJYdCs2r0QkIThDw+lQnp/N4/nZy1LMezxOZAcA6um9P0a486Zt3Wo2Of/+i+fBLfgLI/tQDwcgPDwAAAABJRU5ErkJggg==" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">The restaurant particularly serves grilled beefsteak, many kinds of pasta and salads with high quality and affordable price</p>
+          <div class="meta"><span>🕒 11:00 – 23:00</span><span>💰 100k - 300k</span><span>☎️ 0901 565 557</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=TOPPING%20BEEF%2C%20106%20NTMK%2C%20D3%20%282.2km~10min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="western-cuisine">
+      <div class="section-title">
+        <span class="section-icon">🍽️</span>
+        <div><h2>WESTERN CUISINE</h2><span>3 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>AU PARC</h3>
+              <div class="address">📍 23 Han Thuyen, D.1 (1.7km~7min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="AU PARC" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmAQAAAADnvwB3AAADOElEQVR4nO2aQW7rMAxEnyoDWco3yFHkmwW9GX2U3oBeBpAxf0E5/bu6QIHaRoksDIcLEuSIw7GS+NrWtx1O8Of1m15LSikNAPM6MiwJWFNK48wypZRSmg4c/S6TV0lZJq+tWJZJ1opBbUVZktd21Oj35wh1S01Q5TVLWWpF2cmnz/HTa00TzNnnAVimtkws0wHi+kGvSrHsAOvI8/4+lPfhCHH9gNeGR68dg1R5/BM4vQAe32BOKQG3j0d2bs5AzV6zMyzTmlIaDx39HtOn2VbH2oplr1FKSSevI6+MsjoeAaiSNWjlEjnKstdGzVIHY1GvJsg5Px7p09ADgxVoJSpovVdPn+MbwDI1ANb7e5YBQ9FAzTKWtI4Hj/5rk5NlMRwli2HRgVnsKnhUKyavjSoZEKy1FaNYP2yPGv3+OrZiFFEkJ3ulWLwMqLZy/jp6ldQgerUVk6xRgQZco1ed7MRApCh77B0mr5Egl6hj67lYdvpMlL1SbhfA4+dGbLEsUxR8IPr2/PtjnDkdj7EgU9SKBcGLap4/xwpAR1+QgZAF4v0VetUJmtqouT/XVrS9r1fgcsWAAbKzjmRnYL75vI51gPgdOPp9XssUx2kaZ0kDNOozPeglntsvxfVzXkh6iRtAPMuhWGDz/L0a01AN4mhtRZJ1eMraVXJsxXJMxpggRWy5Uy7BVztH7VRHshd9bcFzLpCjxwoptiK2YkFiW7F2jfnYC1dDoeocwGvurFVX2B+lWB637UNBBrqQFSvkUaPfX8fO4jYw0ukNIWGdn6++AfI5jfPNO6uRM8B6t+dIzJFDR7/DQlCNqimUDehHTdnE86NG/x2e00Xy1lu3jxJ1ufXsvUpUalOSQ8Ppeg6vmh41+m9oHSEX94/IANl5ff64gg7Q25K8Ca1xqP73fPYct3sdxZ4jt48JGCDdlfsxO6e7HTj6nV5VEst0+0jPkSFk1SWl9AgwXmJ29HsdQefkxN2A0Ae4yG5VoQZziy+PlJAfLUB6fi63eZX3m5N9zk7+eDRmlsc6ArBMh4/+C9vuWQn6hkXsINTstasER43+G1yOIHIW7RqkLhSA2JRPnmP6u9t5Ca9/IqwYHms5rzIAAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Mediterranean and middle eastern cuisine, good affordable wines, Italian coffee and 100% natural freshly prepared juices and smoothies. THE VINTAGE EMPORIUM Nourishing, tasty and wholesome drinks and food. The menu has no geographic boundaries featuring flavours from across the globe.</p>
+          <div class="meta"><span>🕒 07:30 – 22:30</span><span>💰 45k - 600k</span><span>☎️ 028 3829 2772</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=AU%20PARC%2C%2023%20Han%20Thuyen%2C%20D.1%20%281.7km~7min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://auparcsaigon.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>NOIR</h3>
+              <div class="address">📍 178/180D Hai Ba Trung, D.1 (2km~9min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="NOIR" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmAQAAAADnvwB3AAADPElEQVR4nO2aQY7zNgyFPw0FZCnfYI4i36BHmjP1BvJReoAC0jIAjdcF5bS75gcCJDZ+ITCMmbcgQ1J8j0wS/3/2rydA8Bv1PhTqACbFu6lRpF5NUq8AVP9U659GVUmM1aR9wcHHCtzTun83k9Q/2vonTgYSFdgTEqn8CVuCmzaAsdjfn2v9L6I2k1JKUHORdQDG+n67XogqbV+AykiM9f7diBi/265XoDIgyFTPq8ai8UcbC3BPCHIR43Otfxq1pZQY662TqRky9fbXz63XPNY9pbR8tPXPHMXp1QGqU9WrOlLzMv958t6BepVkHUqjNAfAJOvVjnZ5eh/VAEmUNp89fMQkis7v4xfgpWU2xprBOvtSGSmegL/NrlehZq46RAQlmSQ19Zm9doF6lKBGAXoRQJGXZr2a5KX56XP1iGNp1gnuaj3KU3G7XiGOvcZVEyEzyanWoQiqxTfwqdY/j0opqcP4YSTYMtwX1Dep3RfyWD/a+idOXDgmmVowAak5RFijWk8ex6PiImnjo3ZwHrzoCneO5EX28G5erS1GAfE5v4/NqV6aQzC6COIkOXB+nsODjUfrD3XsVJ9KuV6iHiNRMTWPZtFreBp/P38cv2ADMvj4uakBme3+Pe/YTH2bXS9Dhe6o6nhpdrzbEdZLxHH2xzmBnKceSTvfr+BjkU+/oDTreAl2p8nVP9X6X+CrvVrQ7z4JqqlZr0D4e34f5/NfbUVVr15kapR2hTiqQTU1wDn2HaGtoq2cnudMlIM6N4nxA6QFB8a6f7f8TrtegpocICS/On4kKkcaX6F3RCuccwCYPbHZUZJX4OR9Lh+9KJiAJKl5aUdAL3HnxFK1V8W2sUzVHIRHV7hXY188p1UxHlePpQBOvUKuBkeN/AR7SGYdvfL0Pn4xfhzSsgG5aE8pj7QvpGVzgO1Ce6upi2NpFb3DpwY5fz12AFObIziiHmdJWq/n749fD1WVli30cuw+YtDqbIzzz1d7PfYdHDOcuQsIwPl1xwO17TESLwpV9Wgc54/jA1VjiXNPaV82IC2b9e2e0hU4+SGK1XlwcvvPOuAKHKBDTI9DRT78Ks3iBw+nr8f0+7edl0D9A4rmALCJpN9lAAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">The smell becomes more subtle. Taste becomes more acute. Hearing becomes more sensitive. Touch becomes more delicate. A culinary journey through taste, smell, touch and sound. BLANC A new dining experience with sign language, where communication takes on a new form.</p>
+          <div class="meta"><span>🕒 17:30 – 23:00</span><span>💰 300k - 700k</span><span>☎️ 028 6263 2525</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=NOIR%2C%20178/180D%20Hai%20Ba%20Trung%2C%20D.1%20%282km~9min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://www.noirdininginthedark.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>THE DECK SAIGON</h3>
+              <div class="address">📍 38 Nguyen U Di, D.2 (7.4km~15min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="THE DECK SAIGON" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADhElEQVR4nO2bTW7kOAyFP0UFZCnfYI5C36yQm7GO0jeglwPIeLOg5K5lGkh3Ek1rEThlAqUX8efxUSniXet8eZ8d/DX8qoYoAGqgsN4ckJymGtYxhQFg/TuA+RXUJqnKq7w3KayGVXm+AquSYjHUL0ApOxjAsZ8btLdzsxpWNjpwlNvn7/H3GB7l3HgNaG//btSgN+/tjeZfZ4+/w7Af9w4c++3YOfYbD7Aaf+Kr/7jhjOswmtO8hlWpSh27nleM60cpBag/7vXHHeDYOfbXIJ/PUsr22Xv8YEOUK6hBhyqvUqbxDjUs36911ihGUZZcMco3TR06ltlsOQ9H8o516M0lV1jHwCTlWWcdXw11OnZYjSeG1pzmvYnmWhK1vENvqkGSNDCap6sroC0Z1wlW6dLp6lUTtaSwuh7qpNzyGqbI1sOTfvfm6QMLenhAU3KwKk8/z0PPWkbzFT3capBNZVIyJTGTsgXrwIJnPYryiOWB1CTRfBavBVGngDB4eKavyJym4fPrsZQwaQKUkqpp0FEUVPmCHi7vzRXWm6qUmS0f8lU2X6uhHqzMkpcmJx9/B8aHC6KWFKMHmZ2XzYKVke4LqoXKYn0ddIqiZNORrxbM4XKwjGuSkCs5+ZBMFSx31i9Ahxu8BpLfgGMHO8v+Go+ycfsSe/xYwyuiTWE0aSRw7+SvWciW8/BIIdTAstfOVeV9ysIrok4SPrSUZN0pqsBFTZdDPSnoYOPBExufPdd69TrGT0kaQoo0x15AX9LDpSThmb6yz+qY5JOxrJfNXgCOksWrH0VBDXuNx7lx/iN4VL2d2+fv8UMNx8Qnc3gNy3C+JrmZ1ReMa3mfqjiQTp5TewXp8Mt5OJdCOM+X54KVqBesXE9tZgrjmcnHXGCOvVZDLa8BTWCSD6kwYLpBlS+IOsb5pkZaZwZLNSkn2n29nqt5jceN0Vt1uGE3gEeOA7KofRMw7115zyrZOHCN9q6gHsf9HcD8WjaTmJMO5fMUWK52bDXU865CcpU+IA99+JJZ1kL9wlFKKRnX42SPHR7n9ijlXmN+/j3AvHdddws1ehCyGUm6MoTTBblZMnDqk0CaPXU6PItOAVL7TfqdtGSycacph5trof5pOG4fHXegH4VjVxjHfm6PL7PHjzJ8ujM828xrfi2pN19TNwsYd5CsN/+pl2r6NizHSMvf/4D43xj+B5XQojv18I7LAAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">It is the city’s most modern Pan Asian cuisine where friendships, romance and fine food come together. Once you’ve been greeted by a smile, share the sunset, unwind with a signature cocktail and enjoy the contemporary experience it will be hard for your departure.</p>
+          <div class="meta"><span>🕒 08:00 – 00:00</span><span>💰 100k - 400k</span><span>☎️ 028 3744 6632</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=THE%20DECK%20SAIGON%2C%2038%20Nguyen%20U%20Di%2C%20D.2%20%287.4km~15min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://www.thedecksaigon.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="thai-cuisine">
+      <div class="section-title">
+        <span class="section-icon">🌶️</span>
+        <div><h2>THAI CUISINE</h2><span>1 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>LAC THAI</h3>
+              <div class="address">📍 71/2 Mac Thi Buoi, D.1 (1.3km~5min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="LAC THAI" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADhElEQVR4nO2bQW7kOgxEn4YGZqm+QY4i3yzIzdhH6RvIywHUqFmQ8mSZBvJ/0poxsjBiAnGZZJEsKkV86Lr/+Jgd/DP8voZHKaVswFE2rhvAtZTCsW9cOfZSSin7k4D56KXeJJlcckmjuvWm3oBRHZpJ6m08A5iHUEOzzqCN6gOsYx0FWJp1bDXUp2GL8Dbp14sDpexbfaP6N3rH/8SwDVopZTt2aFT/VXbr/8+f/gJDyQHpzW7FOibdL6hff3Y2oGp8/Tt+uuG1lAJsx+tGg8axW2c7XuP+Xkq5fPU7frIhiqu3iOpBM4kqk5vc8rHWYrPgcEyu3kzKRK5SBxhVgK2HWjL5AMmtI7nko7rk0NQb1anLoe5tZGxHydaoTnWbYa/eluxSRsRzlXXUI6pbkLn1NgCWQy2d9DWqsi2JqAZJo67IZpI66k3hXPmo0YsyqoLNxnp5LVc23m7Ts1QBVCWhLRjhCZYqqpt80CRF7R7VYb3pI9tRqkxZmtUZyeGoE3y+GuoOtODw+AIjvsDp67rifC2Z3HoD1Jkd6fS1lGrDM4B5yNfRh9ik8VEVBJ7ujp9nAPMQ6kGEt6JyMYk9dBVFr/IMYB5VkKZ21Kh+pvmgRTe+Ipu1GK+YPQkQwK0363G/nq8T+Nl8RoMa1B2PlsvrH1RtsNG2Y9+OnWPn2O1W7LbfLwAb7af8ScB89Drr9QgBvLpJ0Ex+PlqxcmXymjSIuRKmspRj5moRjqQRfAXp5XcjWApo67FZdmKulM48C9bsVeL3q6HubVQPRSU10s7UFkR16oodqWQdkwfGk9Zi05eq2oJ5naJojtW06NDia2TwLxjhnHJZaKSxyY3mPPTDFVHHjNkG5MwFIyqanBnkq6E+1z1zBqHKcmuv/CYLslmy9NmHS5nLkltvUdAXRA2kZzOLc683B88FJ83ozc6jKZ0QiqlxUmWm9jOAebRyhQCedJ1VLMU0W5PNnNzo5c46KvWppI3qC+4+ctGTi4Ccud7fr7kFiLMKqfwHjzGXXNPdC/oaCGk0RODoSOceP6fv5VC30H4zhYlzGu08aLeibvb+bCFxaAFyBBt/9KXFUP8x3Kq2lP0dmm5lqyovGlzLy2Jq4WnYrF+pb/cL9/J6v1zLhXHsgd1u+7d4x08zfHdmeEpnKaDNidvW3PjAPCccXUoMX3ORLcmXY7Py7z8g/hrD3yuUyTHdaM4pAAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">The usual Thai specialities like pad thai, roasted duck curry, and tom yum soup. Plenty of salads: seafood, beef and fish, others for vegetarians. The pineapple fried rice (served in a hollowed-out pineapple), seafood curry in a banana leaf and whole sea bass with three-flavour sauce. SOM THAI A relaxed yet contemporary ambience with no strict rules on decorum still enjoys fantastically authentic Thai cuisine at very reasonable prices.</p>
+          <div class="meta"><span>🕒 10:00 – 14:00 &amp; 17:00 – 22:00</span><span>💰 50k - 330k</span><span>☎️ 0906 67 82 83</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=LAC%20THAI%2C%2071/2%20Mac%20Thi%20Buoi%2C%20D.1%20%281.3km~5min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://lacthai.vn/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="halal-cuisine">
+      <div class="section-title">
+        <span class="section-icon">☪️</span>
+        <div><h2>HALAL CUISINE</h2><span>1 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>HALAL@SAIGON</h3>
+              <div class="address">📍 17/10 Le Thanh Ton, D.1 (500m~2min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="HALAL@SAIGON" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADjklEQVR4nO2bTW7bShCEv/EQ0HJ4Ax+leeXcYHQU36C5FNBEvUUPqWwCOIAT2/NCaCFTDYil/q3qcRHvuo6X99nBP8Ova7iXUsoC7GXhvpwflPV+lMK+lVJK2b4JmPdecpNUpapeJVqvTrReJTlgVZJbfAcwv2VYysZeHmU7VmLfjpWb81g5VgsyBj79Gf+UYXVjL+nrBH7zO61/pWf8cENbuEv95hwrYMfKY6X6X/jqv2+4AIIFHgul+WP9UYOyb9pL1X0JaGL/HmB+p5oBVLdfvQCYrJqhvJzAaF1nJQcD6vhYs6H2RNfTs5FgHSBAElDnQy1VKbDRmqUAuQUWTdEkKdp0qJ2Aqh7kuNKrQ1OVoqmqS326KYXhyqYxoTk0gcnHTxGtx3zVzC19mvNJlapbNNF6QHWT24x53auTnk3ngmWJi6bAqjNhXqsDCfwMbEUOoq3LTeoz9ute1SVVt+pkJaflHer4TaZD7Vad6lYlIPHKLYAmObQZpxSdVLpp+N0tW/YY0pomrOGjW3XOwkWyTsh2JvUZfZ1zeMZ5NrJe1RN+YIFNOKW4ybNcIydO3iEfTa1KzNe5nGg9miL/VM/71S2jAGxG1KNhDXbZUiA3DRYGc0Y4I3Nbj6Ys3UMslTL+p6tmLzTdnAWqs8DCnX1j3+QcZQMWbDqN9BpE7VJRnm269ZxRp/P1KNRgcaU2MDiXnaLKZHn9Ajxeu84gh3t109tW37aq/njtVf3mn/6MH2uI1LNfJ9WK1rNnZXgn95yQfSSRHKOpDZrZFBDtuf+aDfVg0KmV9WiSelyuZwins6FOcpFcw62qp1SY1Szjf7op5YV9W2BpfdlL7rZi3x7rPQezY+V41ac/40cbDvZxcmqeCsPl6zn1cBuBDXGu7OM5jlqdUg/3TN6R0ZKuspbKcEyppaT6zYhwWv+5a58ay3SoJX5SyXLqJuWU7OZtSgWpn4sAixTA3aqbfKhnuf6YD3XSq6TV54A6JJQsbhOizt2WFHCdvcmF5mUz4UR6aqQjsMdm07J65/0Z+zWkNzFp7DEvGU3jaMp8EW661tZNuefKCqbxZj5VIc+lWHXLzc5YcaqnWDoOVU5YzQbq61hCJnpufzSq3GR5/TRcuN/etptzlHKs92M19q2UbWldb9vXeMaPMrzODF/rDwOLc3+dM/mU/RqSYGY69/Pk1TiJlEufuVCXf/8B8b8x/A8UpLzQDEiN6wAAAABJRU5ErkJggg==" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">The owners envisioned Halal@Saigon as the place to celebrate the fusion of Malaysian and Vietnamese flavours in a clean &amp; Halal environment. TANDOOR The best Indian food in HCMC since 1997. Serving delicious non-vegetarian, vegetarian, vegan, and halal Indian food to guests of all origins.</p>
+          <div class="meta"><span>🕒 10:00 – 22:00</span><span>💰 50K - 330K</span><span>☎️ 028 3824 6823</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=HALAL%40SAIGON%2C%2017/10%20Le%20Thanh%20Ton%2C%20D.1%20%28500m~2min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="coffee-%26-tea-shop">
+      <div class="section-title">
+        <span class="section-icon">☕</span>
+        <div><h2>COFFEE &amp; TEA SHOP</h2><span>2 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>TRUNG NGUYEN LEGEND</h3>
+              <div class="address">📍 80 Dong Khoi, D.1 (1.3km~5min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="TRUNG NGUYEN LEGEND" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADu0lEQVR4nO2bQW4jOwxEH8MGslTfYI6ivpmRm6mP4huwlwHUqL+g2pPlBMiMJ/rjlR0TsKolFllFxcQvvc6XX4uDf4F/ayAKAA8UtZcGSI0ij9qpigpA7d8BzGcCqyRKo7wBHnU5bh77ue4e2IpLimev8YsDUVSoruZSpwKu5lFdyr944DHfXgNwbP0w1xulva9QWof3dae0v2eNvyGwLkUAx205NsDM/H7z+AM//ZxAqQGnbbaiwKXTNkn2oy1AUX/+Gr88cDczwAO/3xbg2DxYjs3vG8d2mtn67DV+cSDKV9CLOkjt4jGk5lHz+7nYDEUdNB508PhJ473I1TJmNtRqnSo1RSZ4hUqRpF6aB/lxQtSleaAYp318VOtUqIrap0QN/TrhnerXc8juhdJmzGskUZLQGpAH3iOfQNLadKglSLzVpazdHVzqRRTNmNcvsFO0gMfOYcuxpc56N3u9b50d8Hj2Gr84cBTlTtUlN3pR7nsvjaI+5V4ftw5LeVvY+2EL+N06dFigH/YaTKg01TRSuFEaRYqazOaSqw3D4TuA+RSb9SKP6mrZjvbSspx5VAVDen8HMJ/rwwNFpcjVsnA/8rqX0avMhjpG1w21l2GnpBhRkhtMx2Z5wptGR9o6dSBNI7G0bM7nQz1sUrWHTZrGkeI67bOx2QvsttYEvrAvVJeSt8+VTlXsz1/jFweOUz1EVhlOuEspOlJ3T8jhUYexUPSAnN5CL82jKuqEqDVEZUqt5HDKTxkyqth3APOpypWTnXT7s35JSrl9mSrToc4Bx8f6FVCUTnjS2oQdaTzkVaO0fu21LkIbWvs7gPlcXkswHJWc9Vy28OWqTYhaisFaqTsyxwfYog4T5nUMP2H0YMlswwYHBtfNhjo90qGtSMnZx9QeLtk1HWql/Zv7m55wH6N8SdOqj7Gt12G+5vi6HsV8vtlQmlD7Y9J3TQGuYd98HP7CYVAVvEpm22nbabcx3qLaCsft3bZvAuaXA0vz2MfYWm8evOoNgB3IM7A8e41fHTjuWV2zj6Yg2SztBR/XkyY74eNKBpDcNd6ntSLNO8kddxU8ak46fNSyATml91yoXzjMzBYA/L7BzrGddtN9SyZfppxzXR3pGOlC3kt5dKczeikvgNnGYeePdtrW4TQ719Qju627rfRjssr1uFGpPrR2S1antEtoz8fhHwJLG9sK/bB+bK8Bh9n6+3/6Twc+8ro9Jj4fPaUx+5hwr3cz48gudF/AbFuu+bXum9k2XV7bv/+A+N8E/gelZ5bAFO/+qgAAAABJRU5ErkJggg==" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">The number one brand in VN with the largest number of coffee consumers. All products are exported to over 60 countries around the world: the US, Canada, Russia, England, Japan... CỘNG CÀ PHÊ A green door into a simple, yet perfect interior. Wooden floors and tables of soft mid-tone browns, surrounded by antique wooden, found chairs, padded with Chinese cotton print cushions. Lounge chairs are also in the mix</p>
+          <div class="meta"><span>🕒 06:30 – 21:00</span><span>💰 40k - 110k</span><span>☎️ 0915 289 932</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=TRUNG%20NGUYEN%20LEGEND%2C%2080%20Dong%20Khoi%2C%20D.1%20%281.3km~5min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://trungnguyenlegend.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>MAISON MAROU</h3>
+              <div class="address">📍 167 – 169 Calmette, D.1 (3km~8min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="MAISON MAROU" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADqklEQVR4nO2bQW7jSgxEX4cCvGzdiLpZMDdrHSUHGIBaGmij/oIte5YxkEHi/iMYAWxx0SVSRbLIFPGp6/b2OTv4Z/hzDY9SSlmAoyzsy3mjrPutFI6tlFLK9iJgPnspXJKpmWQStVnQazNJAbhJCu+vAOYpw1I2jvdrKdd178d2XbkE1xWqOhkD337Gv2S4U5t9bEttFtxWLsFyFGr7QWf8MsP7e+yX36uqYC9gwa34dcHiB5zx7xhKDXZwjq2smHQrW6+/LmoLZ5y/CpjPGu6lFHBgAft459gsuHy8c7xzbLdSyvrdZ/xiQ5RXcDJ5M8kCcJLJJUlzcTgKB0zqtYH3k74s3AJJ4+4rgHnK1xYDO2DhQK/qVR3vuKlRp0Md3sGCPp6AW2DhVCmc2hQ+XZWCgp4sXRu4qaWX803XPfJfAcxTqDPIe20dP5GKqo5b+JxspgZ0SB7ruEkW3oEqcMtgeAUwz0U4UJsC6ug4/uBzl9RnjHCSx840bWrUlsyWkTAjm/kJVsCDtIEqC6iaMV83U3K4pGZqCVnh2W6TufsVwDwZ4ae7I9msadQqTZLyObwCmCczV1OQH6p6bZm1gQ4wY5UidTzVA1MbfQdITWo29KXpIlyt4702qfXMXwA86hN8xtps9B2jUKnJ5EpHp+uni/C3VFEULLAc70CmsLJyW+m4Yv/+M36x4b3PcgVZqIyvI+Ddwid8r4P0NclsdajijGJ1PI3ZUD/0ImWXDaMqe9yajc3egOs6kvVoN8L1sY37tUm/LL79jF9rmFpKCoONmhMfv4sJWY7abBw+uo/RTVeZWuav/CV1hgnf65zlBXf5KNk7VVMLp7YJ++tTOclQzzhPGldkJ8KEES6NPho6nhXafZLbp9VIs9dQBwUWmJpOX58K6nyoh4DQR0Pd+n3W80e7PR9qU0tpNEce3JGChU/ra8nUhmZSW8+sLWmUpvPV4W/Acmwdv5UtVxQ4SgfYYVdA/TXd/PrUTNRSNAPPv5mwyCCfL8JzZJkVKRnhQ1v4cxI0G+psq9UsUk8Y4+whiQPMWaVIGup3Drkki0eQa9I5Fwx354AvIZ+rGkMknwv1W87vOLbryoKPdZSgH1ta9FzPehEwn7yUno3zowaMrYzHTGQyX99R35svz/okx9a6r6m8ApjnDb2s+23dL8G1lNu631bnKGWF2i4f248445cZPnaGx3YKMEYhY4yb44C5fH1y+Nljnj96P5fQZtxVKP/+A+J/Y/gf6LmJjhum/1EAAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">A café, patisserie and gourmet chocolateries. A space dedicated to the ultimate bean-to-bar chocolate experience – where you taste all the fresh creations prepared by top chocolatiers L&#x27;USINE A contemporary Vietnamese experience. Inspired by the timeless elegance and the Indochina era, a space that not only showcases global fashion but celebrates modern Vietnamese creativity.</p>
+          <div class="meta"><span>🕒 09:00 – 22:00</span><span>💰 100k - 300k</span><span>☎️ 028 7300 5010</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=MAISON%20MAROU%2C%20167%20%E2%80%93%20169%20Calmette%2C%20D.1%20%283km~8min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://maisonmarou.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="craft-beer">
+      <div class="section-title">
+        <span class="section-icon">🍺</span>
+        <div><h2>CRAFT BEER</h2><span>2 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>PASTEUR STREET</h3>
+              <div class="address">📍 144 Pasteur, D.1 (2.6km~8min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="PASTEUR STREET" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmAQAAAADnvwB3AAADIklEQVR4nO2aQYrkSAxFn0uGXoahD1AXGVBerY80N4g8UIO8LJD5s1C4ejENkwXFVDrowCTGqYU+ipC+vmIR/72OlweM4I/V11mhADB1Wge3gNazydQVDoDns3r/MEaXZOEWLgkckJR4NpmkuDrGFVhw4NgAxP2GH+v5/77Zz+f1/oNWd0krHJvT+goWsN++3q9PtGo6NuC+7gv7jdaP177+y+r/9+szrM7zKAG0rvDKQlKv79c/j2deDf/tA1w/r77QJCm5v20AbxsJCW/b/W1DktSf2PuH1lk7qCcBqC3KqJu6eByRZOrZpPBsoikLo7qFU1+e1fvH40hVitYlVdqxGNhpygkwqlu41E29cun4Hpg6YLo+xqA2JJBNtT+zMq2Urc8Qx/CqiRYkLnVwC88mBXVIL4/xrPXg2XqdR4AmcJNm2Kvq9ZtNeUYw65yqK5iBA+AKVlj35VuQ7Qf7AhybHxvH5hZP7f0jS4FJCYln6yOOrYMnbupT7FWZZOEKz9arX2bwn5MbPKv3j5/HxAuRBVUlC2ZFc4Y4hlsALilbEYCCPMjADBilUR/VK3CF2sIrHV2fr76wL8fGiud++xZuwcr9eO0JClb8q/z6PCuKzCjINnoNBRZemXaKOPJ+7qp2AFU1wPN8nwCjopC61Gndosg52XqVletjLIWcInI2JKw+3oMpOLmGaPNr347230ZYrx/HAKhhB+fgI6v9Z4T1+hidVr3wSeRKqWuSNI2eY+Ela5zVnyI8lVev31uNPrEoa9VEG1Jkza2m6DvCFU7ryQjfKePUXGCK+lhMFbcSPQZTLRm58F4/jkMS96r7pVyNBjmQ+hz9YzEcqRex+SXHAW0KnhOeOK3bSciBqpWVV2eoj7WCoT1SKahU5bMHeVbvP8RzTN1q09awI0Z8h2z+rN5/QHuUgLetmmLqGC6vP1ZI7uy3Z/b+kVVJ9RzGcQ7KdV7OmaDveLe6H8st8fUM6/E6mPn14/h+d8NXsbQ4vv+9gGBt97/2BZav8evTuZzq5hhDLWeM5xSzzHQCwGLMx2m9yuV4mGA2t/y52zmF1T+cDBQygPoQXwAAAABJRU5ErkJggg==" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Combine American craft brewing techniques with fresh and exotic Vietnamese ingredients. 70 distinct beers and 3 breweries EAST WEST BREWING Artfully craft high-quality beer that everyone can enjoy and we foster integrity in everything we do. Authenticity and innovation</p>
+          <div class="meta"><span>🕒 16:30 – 00:00</span><span>💰 85k - 500k</span><span>☎️ 028 7300 7375</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=PASTEUR%20STREET%2C%20144%20Pasteur%2C%20D.1%20%282.6km~8min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://pasteurstreet.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>BELGO - BELGIAN CRAFT BEER &amp; GASTROPUB</h3>
+              <div class="address">📍 159 Nguyen Van Thu, D.1 (2.4km~9min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="BELGO - BELGIAN CRAFT BEER &amp; GASTROPUB" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVYAAAFWAQAAAAAa1IguAAAEA0lEQVR4nO2bQXLjOgxEH0NVeUndYI5C3Sw1N4OPkhtQS1fRhb9oUPHfzcbz9alo4VgOF1QbbDQacHL+9Hp+/PFS+Fn7/1yLN4DsBnTIjdwq1OyW3dwtu0Km9jPs9404VHfP7r2Yt+rj8Xv8yyie3b3NjcMHkNIGQF3K7+fKI30CtwbcF+jAnpY37+E0a++3xmNloQLPtFH8+cuB29f2t/ZworX5a1sUBnti36BS7C/v4b9YO/ih0cdtbnWQhnmr2S/CD/eUEtRbq7nVBYAFln1j/1yAfXumlNbT7Pcta/G4IkV26EQ8QM3+fU0dD3irvVhutVPdzUMt0Km5Rers5QI4uHVqp1KOABAatVMROI3Z+QGRZHbPbooBnY5BjyhaKNPHQzys4kFfPaKIRi/mjV58fhyCH9Cz8yKnBQvFKDY/P7Tai4kTvJGFQDF3pxjFe7xOjwMUz63m480giiOBKplOjoO0InyXmW7upjPSqb2YssnsOFhu5Ba3R+5QhPRivfgleFJhUCx4Ui5Eo1Oz67yEtpwdB6d49iDGXkJSypyRmlImnRyHJjltFFeWHLd25E1JiMlxcNPDdvCGqolevI9PpLrz/PohvnEdChA32ogTd1mXF8ChF/kwUXjKk/l33W35AnUW1A4QwrLrtgwERkE6OQ5Nf6toIbur1uiINAKi+c+Fm/KCaGHoB4lJwoK4RL5wb7Id5LfwShHZDarcqqlx+ADUrHmu9fnLnytAh5t7Wnmmzz76fafZ7zvWhh9FtDirYuMw5YafP3088FJX+pFA1e0Ns66YIJodB5UYpg7ONzk0+dVKKBeoL9xzqz2Ma7kQL9mzmArz+c+FG6AhhxwODNmty51rqHlxAT1pKqkoJsPhMKhVX8jDnz8emtJiBWIGZvR2GVLqAjrqg2K3Vh8r7v5YeawA7NtjvStj3tp9Kbbs20n2+561qrNQXaksGTNRxVRlhI99gfqiF+9wINBHB+cQDz6/riYmwRoUR0ShwTA3DcOowTE/Dq2OQxFoqFshbzbeqKV1hv2+kx9GR9t68aw2X1QZjHmAK+goD4+6yaJ0ubLhvYQFcQEcpB/ccrhwIgeXQ6VzcY35BxusyHClRJhkN+URJCnPsN/38kM0sGS5HJ+jqZhGuJdn2O8712oebNnTzb/9yYV7dn+sd+nq/DW3nvxgTymlpfwG2LdFw5PcNVadW9wuxU6y37etre7O/knxxwr7BnRIadMZiZSxzx0PMRWWY2rOQkBq8CMyJjB9vTlwaMe0Q1hS3qrqDhl38+eL8eubMRdno2ERQzLqfc8/Rzp+j6OiUo6cQqKPMxLTQWfY7zv1JJE6w2dA8rJVb4oTFR1z45B+frf4s/bl+gcbd2Ch7W43kgAAAABJRU5ErkJggg==" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Pub, specializing in Belgian beers and food. A unique and friendly place to enjoy</p>
+          <div class="meta"><span>🕒 11:00 – 00:00</span><span>💰 50k - 200k</span><span>☎️ 028 3910 0485</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=BELGO%20-%20BELGIAN%20CRAFT%20BEER%20%26%20GASTROPUB%2C%20159%20Nguyen%20Van%20Thu%2C%20D.1%20%282.4km~9min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="http://www.belgo.com.vn/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="drinking">
+      <div class="section-title">
+        <span class="section-icon">🍻</span>
+        <div><h2>DRINKING</h2><span>2 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>HEART OF DARKNESS</h3>
+              <div class="address">📍 31D Ly Tu Trong, D.1 (950m~4min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="HEART OF DARKNESS" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADmklEQVR4nO2bQW7kOgxEn0IDvZSBf4AcRX2zIEf6N5CP0jeglwFo1Cwod68+kAAZ/LRmjCyCjhauJlmsIpUiPvUcL587B38P/tyDeymlLMBeFrbl/ENZt6MU9msppZTrk4D57CNvkkySuklRuzlRu0lyoJkkb/EMYL50sJQreznK28e6sb8dKwt8rByvCjIH/vd3/E0Hm/l2cajv5rBfL87lVqj9B73j9x/cjrUd5c28HSvm7SjXAPOf9I7fdnABBAttqX0Jjn/+taC8OmwFloAq9ucA8xU2AzBv//UDwGRshvJxqIqq5HNzJJFMLkmaC/VLduSldruVy60cK0cpx6uOdQsIGN38OcB89pFk3iRBC4iqgKg9QN6CRn74DGC+hDqqzFsAZC0DTerQUqXYbCploI4qqUftZ9CbOVKXFLXHfGzmUEXtUTu1S53aqYraM9apTmdDLcmJmozdg2bqqcCjdjL5Z6xrIB0HtMRL7SPKPgp8NtSOJaFJpp6ElgV+QmY6z4W8UZVcDZgjZ1B6lTnMWddd6olxRFYC5M2UFDefv87O1c1JWSJvZAJA5rnUJ0TtmLqG1yBGzzpjPZrXdBnu2bJ78lj+wlCkpA2ZUZv1oc2crO4cJmSbTqk2Y+caDtqUchQYzHbX5FMq0qDd8zz9NRnlKnmTM6G/rro4C+1YW+xX9iv71XwD5Bs5XNrnm4eTQnR4q9rvsY6qkQazxRqpj+KtOmscU7e7epmUzeLetU9VJh/+On33hColZyY1uYvBYOqR4jxb9nyoHZ2SLBM7pwpAKtUZZ6RDgJm6ndrbzsTOGcuMdf0y5kXwsSLp4nys7eKUFd2usb+Z3s2fBcxnH42xMEB2LnnjscklpnSafk6879numETtSe+pxmdDrRFcIKrswWzZvofdng911J5zszRfOS6T0ny1/HA61PdbSO2uSZLA4xyWTuiv01V5k7exCHAgpdpYCkzoNAe0c9tV9RAt3oDc/c2HOh3WXZakydLjG+gT1rVjkkm56wkAciacqQ5Mp80edxUSqannOmBcXRj1PmGsyeBymutzUpot23y+udkLNEns1wXSalG73d7Mt2AD4ie84zcfTEXabOx3csGX2T78NVNqs4F6zBOCloWeu93UMNPV9f1gs1tZ6vvFOUo5Vo4V9mtZt6j9cptvRpp3hscVFCD39Y8LKhPeGb7fLRwTlSS09JjZxbKVz4W6/P0PiD/m4C92jK4vUmC5jwAAAABJRU5ErkJggg==" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">A new sense of entertainment and excitement in the most unique destination. The best-rated craft beer in Saigon WARNING ZONE Delicious dishes from safe and reliable sources, a wonderful experience from ideas and the concept of regenerating life from the veins.</p>
+          <div class="meta"><span>🕒 12:00 – 00:00</span><span>💰 50k - 200k</span><span>☎️ 0903 017 596</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=HEART%20OF%20DARKNESS%2C%2031D%20Ly%20Tu%20Trong%2C%20D.1%20%28950m~4min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://delivery.heartofdarknessbrewery.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>SHAMOJI ROBATA YAKI</h3>
+              <div class="address">📍 08 Dong Khoi, D1 (1.4km~5min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="SHAMOJI ROBATA YAKI" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADjElEQVR4nO1bS24rOQwshQ1kKd8gR2HfLJib0UfJDdjLADJqFkXZWSYPHjjWPC+CTpqAVeC3ikojvvW5vHzPDvhr+HsNj9Za2wAcbcN5A4Bzaw3HvuGMY2+ttbY/CZjvGzpJAOgE8Hk6b8c709vp/HlCO8FI5qPPeGdDMB1wSwwUcCaMQXLAB9wSlj6eAcwfGL4ycOxkXN4Cx95OeM0zevymM97LcLs+DTiAywZgx8nPwDhg+d999YMNyQBwaTsTljASAD9ae4sNQOd4/BnvbnhurQH+mtiADY5jt8QGt493HPultXZ69BnvbAjqkz465VYjAWe6Maxec61qphoOI41E5618dTIxOvV2NdSkJciwdEu32bYsoVZuCfT1UMfoNHk8YYyru/VHwJfr11AYMwHleLpaGFNh4KMHsB5qp5JaPu0cuFW20RetZmS5VaWbMbo8jtGDs8qthjp9Dt5hpJyr0l1+B8aKEW7p/FrA041ED0EG1mMfYAKd6IrwatPoYaTCAD0WzOvElWaSYQylefm6B5TmzwDmZ6gZk1m7kZYYV1+TZCyX1y/ovJzAj12k8tL2zzfK+xvOl7a39v7wM97bUDXcFd5iHKieFRpT1bzW8rU6dYxOo/K6uvaM8BjwJWczEQ1Lv3IuS1d906ux2pTyApwBZ+LzhHHsxa/7PwBw7APOPD/+jHc2LIohlmEMKaJGjh7MmmEWzOuElBMxDo0rli4uNqB5dT3UlddMiFQCMMYQ9QYAX65fi1+H+LXNjUDFNkOj6aJzeGU04EYOOMnR4/qw6ERKbXbQA/VANSz9XDCvazK5LbkkoRhDkW8LzuGQhiDZhFMJF7uc0wsWjHCGkTV+z60uv8xmJSE+A5gf+RoTJrW0LY1Uu48QPVkNdWLA0UPyoJyuhYhkwzXzOiHI6s5TFg5pp3L9kgpSiWa3XUAAM9Q1ra3GuWoiLexZU6jlbSitAHgGMD+q4WTI3WJYJSPUSrecvh5qxXYpKqJavTZcVlP6cqhTy+tqUiX7F9msXxfM67qrUKq47id8lZKU8quhTkC3EdSyUVqKyIjNTF8L9UvdLTz27djRuQHogaONqRmO33DGOxve7hZOJbwuomDKR7JZy9dX1NpsKs0lMtSSayw6pUwxPK7Cgrj21FJW5Fy104lRO8155WwqSNXRngHMj2t43aUUap87TfUyLlfD29//gPjfGP4LcEytTH2QwekAAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Casual drinking establishments, where customers order a variety of small dishes of food that can be shared at the table.</p>
+          <div class="meta"><span>🕒 10:30 – 14:00, 16:30 – 00:00</span><span>💰 18k – 800k</span><span>☎️ 1900 066890</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=SHAMOJI%20ROBATA%20YAKI%2C%2008%20Dong%20Khoi%2C%20D1%20%281.4km~5min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://booking.shamoji.vn/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="bar-%E2%80%93-lounge">
+      <div class="section-title">
+        <span class="section-icon">🍸</span>
+        <div><h2>BAR – LOUNGE</h2><span>2 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>QUI LOUNGE</h3>
+              <div class="address">📍 37 bis Ky Con, D.1 (2.7km~7min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="QUI LOUNGE" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmAQAAAADnvwB3AAADCElEQVR4nO2aQW7rMAxEn6sAWao3+Eehb5arMUfpDei9ivkLUmlX/6dAgdpGhSwCmwsORiI5Iy/i/+v95Ykg+I36uSgUAE1OF92bJGnUKwPAxl6zfxqjSWqSwhTW5ANrYQMbvZ6fACNYC0ZxaoCCFoyuFrTDY3xEWZMS4Oj+/gpdbOvP5/WdUffllQsM7pftRne29bKHvL4hap7HsAGqU0kLBh/n9Ph79b4sC3ANu2zrBS4Y2DW4bOv7siyvu87+maVcQVYeMIUNaGGj18uD81hNsKlKaD5s8iY1KV8dHyNNLrkCuoDRfWD06phnmAFyqukOlr0jN63C6E7X6GfgcXSNLrorkHxQ57EFnGSv2sDAJJ/QbBSDnjv2+BhnKwxamOR0l4rWml33mv0XekdYmwMqs9KOLrBUIofHGEiusBamKaxGzT95Qs+AcUD7OIwAkj8K0Rl4lFpy1yU5tXsBBlTx2Wv2T2P0FtA1oNRi9xzk6MqB5+AYX4D3Pz62lZSNwHYbcH1b4c52Y1t3nf0T62HaZMHJ/5BsVsDBefzQjJI3ec6oozvdB5Z65PAYw3K2mXXGWkD36fPY8WvOC9yzIS5/vPwcYLstr9lW7j+W17dFofiwWFsqLEi5UQGHr6ulobLpS9UvJIGlijzFvOpVYbonIklZfOgq5bXX7J/fq1lhHjym1gCyfRx/BkDy1Bf0GlnpalJCTloPjzEsD2Du1TI3sCS3SeME/TH1o7x+Kaa6J7/J5uExRg7kVn5OMP0cpslzAh4dYBL3oDXVR23XvWb/BYyf7KmsPHnloaLyBBgncVjTFIzVQcqWPD5GT+NRMW2csDFvPfJe8vAYw6bWKIMuxSNd09s5PsZP91YDUjM+Bh6d4a78s+hQ3nqU1wpn0Y+Pe+QqL1Ms14RT3XOv2X/Fz6khfHo7tVfz/xnq6vx2JQ2r0dM99jnEnmBefUQZ25Izz/Vtvb7dgGVZL3CV7z/7f6/Hd1ajbpDz1rXsx/zU6uA8zroapMvBhFk3y2eYc5bfbztPEfUX6JgssmXnPeIAAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">QUI - Cuisine Mixology is a concept of a dining lounge with a sleek and luxurious warm tone of wood furnishings that is not only contemporary but also elegant. MADAM KEW Rekindle the spirit of the 1950’s at Madam Kew Saigon.</p>
+          <div class="meta"><span>🕒 17:30 – late night</span><span>💰 180k - 17.000k</span><span>☎️ 028 3828 8828</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=QUI%20LOUNGE%2C%2037%20bis%20Ky%20Con%2C%20D.1%20%282.7km~7min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://quilounge.com/hochiminh/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>THE TAILOR BAR</h3>
+              <div class="address">📍 21 Phan Ke Binh, D.1 (2.3km~7min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="THE TAILOR BAR" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADkElEQVR4nO2bQW4jOwxEn8IGvKRvMEdRA3OAf6TgH+nfgH0U30C9DCCjZkG149nFQAaJ9afhhS1roTIpFlUlF/Gh5/rysXnwd+L3nbiXUsoC7GVhWwC2Ugr7urCxr6WUUtYnAfPRR61KMo0HD2tVrQLdA6pJarU/A5iHUEO1VgE8oKphDSVYqjVsNtTL7Z3Yfl7+sb4Vj/VMoW7+Hx7Ll6/xD6Lerkt9W+pbgX3F29JhP6t9gzX+mYlSABnWU6smsa9v562cWQBX//o1fvrErZQC9XRZrQGwr9Y4XV6tVfb1Wko5f/UaP3kio3Y3rNEBMAmqKUxxq+1zVbOs4ZjUAZckAJcpgPxo86GWrKGkJwBM0T1MAbUna/uEqDtkMncPKboHAFWt4mGKCbsURXdlGyYFrvde5ejZYDrUrXaXtZopjat7dBcePb/NfHgGMA+htkanZnyl6FTliI9iPuG+blgDj0zp7urU7gK6633kGcA8tK/zkGV3tct0ZLgizyazoW5AEvRgarXaPfKAqQYeU/J191uLEoO7j1jjMX6HZwDzYEc6ehJLtrqPtSTFhDVcA2CqB0lkg7ygU8frGcA8hBoPPEbFzsFGspi1OqL/DGAe080a3ZWxTu6+y/Doc9bwChyb+mjCs0d1WQNqn7FLyXBnMmeUcR3jNd/MhfoF1wILXH/E2xm7vLKvsC1UPICFOqGW0hgdeBvcbZLpIOvRnE+Y4bl5k6b77YuxqWFO5lI/qMqklP2TvlMxm1RVGOVaihRVoErC1alq1RQzMlfKKZHpnbFODbzfdJUZ9zWeJvbI7VQIk8X6yIHJYv2Ch13W7pEdWjlzanWBDqfL66mx7OupPQuYjz4JNqk5Dxp4ZMSzV+lTnjQbfeAdqniWtaxj+QtMiTp7UQCP4dQP135op1P24YfZoe4a545UG9IQmTLDD5pOSUGK1JFu3kde0pgPdcqDQyTMbe6RrXhqDtMxFxncpOwh+B+OQG52azN2KYnUI8XwY3dH1nY1Rho8A5gHq1keLfPC1biMNMo4MKl/rZtElpK4lOOHEVCn9LlIp344mNWOc1aqo9ZmPF/n3cIGZHon2LxoF8P0mRH1IaQMhwtujk899KXJUP828Xom9WHYdFkX/7ecK3D9Ed9mjZ8y8e4eqacJoptfn6zNnMxV38Wx4wpWZniqo5M6PgBZvuzowO89TZtQSyl//wHxv5n4C7DksYS+m6XAAAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">The Tailor for your soul, not for your suit</p>
+          <div class="meta"><span>🕒 Mon – Sat: 07:30–02:00, Sun: 18:00–02:00</span><span>💰 140k – 7.000k (Glass/ Bottle)</span><span>☎️ 028 6684 8589</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=THE%20TAILOR%20BAR%2C%2021%20Phan%20Ke%20Binh%2C%20D.1%20%282.3km~7min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="rooftop-bar">
+      <div class="section-title">
+        <span class="section-icon">🌃</span>
+        <div><h2>ROOFTOP BAR</h2><span>2 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>BANANA MAMA</h3>
+              <div class="address">📍 102 Cong Quynh, D.1 (4.3km~12min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="BANANA MAMA" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmAQAAAADnvwB3AAADQUlEQVR4nO2aQYorSQxEX7YKvMyCOUAfRXWDOVLTN0sfpQ8woFoaZGIWSn/+bjzQ0K7iJ8bgshYKUiVFRGYT/73ub08EwZ+on4tCAWABXZJMwyRpgCscAM9Xzf5pjC7JwrOrYEoj+6Aru0xSHB3jG9DaRv+8fG25t3vb2upA7hvA3pYfy+u7olA4uAUmZReQfSgwjaznp9hHgD7YN/YNWPaP9q6E5QXy+o6oBRAscPsrFtHwsf9tX83+2QRLF/vrZv901LW1xv5x+drYN4vaPgdf9u3eWltfOvunorokJdA/byu3lQS43tZrQrXZF87+qaVw+qAPCzdJATggDYVX5zl4z0HhCk/cJGn21QSTctKAM2CkD3C6EnKWbk0NivCcAKM0pKGgipY+TCMhcfrIrhNgrMpUkGCBggeXG/QTcDmkYQUKByzcwrOPxLPXX8ffx+JskjRsNp8hDfuNmR8eY9SYIPuQRgmPBIVPBnsCjJLCLbxgJl6sANzC7SR9FasR2QVQKjJQQJ+68vAYNQC6AKuJX596GXHp+BgfJZoP36NYQdVw/Tw8xtpH3IJJzoEum885R8+phiMN+pj0tQ/6SLwo+sExvrG3+8oCbXWFL7BwtXALLsEC+UN5fXtU4rm3Zd/uK4kvXMuzSrBz6EcAssuKmQN9mKaDfpa+qlIZJTdMgy5pZCnlE2DUoAvcyknGLQCmqurDToCxHNQ5H33O/XCqest3fdXsn4/KPi7B0rWA4mrB/f2z/r6tsG8vnf0Ta47FX8NRmpJZsmBSu1fN/n/oDo2S/3WC8wt1EfLj1+rUj4lXd9XcQS/vsb5PgJGusqoUNUEElBsgncMH8HlQFSSUD/mbeaWTvI/hdXycfZQnkMzNtdNwAPzh3gyLqlKVq3ySvjq5jZeVCjBNgFGE5wzvY60oLsfUjH3k4yjk+LX6xt5aayWmiqwuOHAJL135U3l9a5TXcdX9fbS1RPGV/eO2AiTX45+xPu48SHW9YT7tqmlSB8qHr9Va+wbc3j+tTLmv9miqWLx+9s9G3d7HJcj+yf6x4Pf1el9LL5/B66grZEVp5o2yOv44jb8aQMlkipNP1/HXQDn87Gh/7naeIupfu84LksuAdl8AAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">In the heart of bustling Saigon, Banana Mama&#x27;s rooftop bar is a place where you can relax with get some sundowners during the week, and have fun &amp; let it go during the weekend. SOCIAL CLUB This place presents a menu of culinary delights alongside a spectacular offering of the finest cocktails and an extensive wine list. Take a moment, enjoy a sip of your delicious cocktail, admire the stunning beauty of the world.</p>
+          <div class="meta"><span>🕒 Tue – Sun: 16:00 – late (Close on Monday)</span><span>💰 60K - 500K</span><span>☎️ 0782 356 137</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=BANANA%20MAMA%2C%20102%20Cong%20Quynh%2C%20D.1%20%284.3km~12min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="http://www.bananamamabar.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>AIR SAIGON</h3>
+              <div class="address">📍 Rooftop 22nd Ben Thanh Tower, 136 – 138 Le Thi Hong Gam, D.1 (3.1km~8min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="AIR SAIGON" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAW4AAAFuAQAAAACJ2c8iAAAEfklEQVR4nO2cQWokSwxEXzkLvMyCOcAcRQ3/AP9Iw9xMfZQ5gEG9NGQTfyFl2Vsv2jQ/pzBNY2uRJFIoIqTyJr7w3F++Eg1/w/+P4SgAmtQChQ1QMIDu+Se60zOzbDzV2R8ebpKA98Pov4Ed27sr2DGFtT+XAU1SPN/ZHxiOwsBaZPKY5ApTQHdJkrcwulrQYqmc2T++Db9w3Xrsb9x/+j/BfQcYP+L+43sO86Th70fmz/V+XPfb5X5c6T6677ft+w/zBOEoTFILa2FNLrmCJjVpdDUpQaZJWquaXuC6bTMrbr/2268d43bhdnn9c+F2eQ3jdrlv23Y839kfGI7yCRtdI1MoLJOELsnpOp+VciaxhSaN7qOrBaN/4sW9Cq1inursj2d6CSlJ8JK3tLAmgY3uKsDxsRbTQ1ILmkT3FoCBKVCgzJau/Bx9uZwZIDnQ5KkFmhwY2OiFMwNjyZtpYa2uSC2ge5MXFIdJviICy+k+sIFJ3uSje7EXLNNJYXRfTB1U187elJ+S6K7Moi6wFiZpuWqSMjGavGRjQs2sr4El4VmMA6MidZ6eDF10JcIk0xvF93y5nAnyWlIi0cXsR+VclbZaEWdSOZ7UJZOn6QOHs4kvdzORjbtQpZhM93S0En9U+LNcNekjYZhJotFTSXl+ScBZ7GZsUJZ4C9IMz36d8JIoNBZUB9PpLfYLKZ3oDqSWTNG0Is7IR3dA8lG/LH+vReXPkl3bku6es4OkNFVikPQm4Wixm6FKST5KFNiAFmTaZGWNFXVT2TLVu+VNNZFMzzxNLWC5apLyWpL9JtI2KRNmYFluGbDWzRTO2JjT7SwcyG6eJrCtyPTSmwqbs9pEmDJ+dRKbYLGJf7kQ+ZSsxgC6MnnayXOWyxnX2YMSVTQVQXoy6WVlQT3V2b/DBzaghTGFZPrhk/qSPGc9nPGcTp7+VYmmmUspJ9f0ZxSVIcx1mhqs5ApNLQOs5wOHMaU00/It+zeHtlM3LagORvdkL0lmynDoTvkzs0MtdzM2yoHxgY2yIz76VOkpabG59gvw+ufyqjKs9tu2bZf3gwHbAdj7YTtsB6/xhGd/XDizAdUKzemTK8gxbo5uV5z4S+f+QxaU5nilzTHluS+x1s0EcxnPc0DZJs7kHIHcB5Avp5uSrsyf7NRZRNm4a8UIW+5mpvOgIPX1Z4c8Ry0DI/cBnurs34AzaYBjo/vkdelCcPbxNX3gHB9Q7ck/r0Oci0Yr6qaYSNsFtdiZhvnp9SUTXk83wTR7WzLeaQu3KSeX3YVIqMmJ9rm+WHue3cviYz2cmTvkc5vImS8aJO9lmnuL5cwLt23btr379vP3fbuQ9XW73I/r4LpzBXbYYXR/trM/MvzTuypzh/PjvYNZR+XVrIXAO7BhwPvGOGhx3d+4bzRob//SY387Whwb6OGHearwj7cF21yvSt1N15hW+cn3VsqZ82asVqNrn9PPCd35cuVy6iBxppjMtPiSCQO1s8dY0gem2AuQW53Zr31SHc/NvcUQePv73w/+hn8x/D9pVRvgGUSlJwAAAABJRU5ErkJggg==" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Air dining, which represents a harmonious blend of food, drink and music. Trendy Deep House music rhythm and swirls of city&#x27;s lights. SAIGON SAIGON Savor unlimited fresh air and plenty of stunning views, music nights, and chilling time for you to accompany our refreshing drinks.</p>
+          <div class="meta"><span>🕒 17:30 – 00:00</span><span>💰 99k – 19.500k (cocktails, beer, spirits.. &amp; food)</span><span>☎️ 0974 58 77 88</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=AIR%20SAIGON%2C%20Rooftop%2022nd%20Ben%20Thanh%20Tower%2C%20136%20%E2%80%93%20138%20Le%20Thi%20Hong%20Gam%2C%20D.1%20%283.1km~8min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="http://airsaigon.vn/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="dining-river-cruise">
+      <div class="section-title">
+        <span class="section-icon">🛥️</span>
+        <div><h2>DINING RIVER CRUISE</h2><span>1 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>SAIGON PRINCESS CRUISE</h3>
+              <div class="address">📍 Nha Rong Harbor, 5 Nguyen Tat Thanh, D.4 (2.9km~8min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="SAIGON PRINCESS CRUISE" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVYAAAFWAQAAAAAa1IguAAAECklEQVR4nO2bMY7jSAxFX7kEdFi6gY9C36yxNysdZW5AhQZocAOybE82iWe1pXbQsNQMKJr8/PwsFedPP4/LH5vCj+3/1XYvpZQFHqXABttj3Zb9BsBW1m2BUkopt4P4+xlbXMXdq3dX3N0gLmmd1q05zau7q9gR/P1kHECqUt2rirvTOs1diZvWvCp18ji8bG0vBuw3279deVz7/drZy9ev21/z4QC2UlbKui1sC1sgRlXu107rf8uH/9B24INSvQPVuyGuYmDNq0r1M+DDBbZSCgj7d1Vh//5SFvhSyYrYb49SynoYfz9ii8dHxZobVO+uEpeZISphMnU+RL+IvtANsUQDce/x92VwBH8/mA/dvbtSvb+SAWi/sYjZ8SG507MEagbE3XtGxr0GxTqCv5+MQ7Ami96h0LplfMRap3X3bm32OKiMBPDq3ZpXdxBr3Zpb6zQ3gNnrQrGWLSOINC3LIUJExmr2fPCe4wPi3mvSKqkKYK1n45geJ1VcsdYtYEEBiWZhBKvsVWX+unCPZx8BcRCA5obkf1s/QRx61UTLmDWs9Ri640uQB6bvF55NoapUFQ+EjEbZ3L3Teoxak8chR8vUo2pIUgotWwYjKyaPQzKHITq1JJAgkSGQ3yePQ9R+NIXmVcVTnXMDIwZPt+lxUpM2kCIMDDoNYxjXM+QDdYwVVamK67OJ5PxlZ+ibiuVXGSoEQaUiRINYzo6TykuQhBrUWmGUSVzOjg+XYI9LSBDNbb8ZLIghtn8vze8rC1K9H8XfT9oa22Ol6lauPS6/vMNme/lSjI199r3e6BEhPrh3IJLECLINTL/P4rfxqiWjpsUA3g1o3VVmxwf8jTQa8npqMIQQ7pAT6JMhP/bnPuulzapEKFKjO4K/n9cnbcizELr9+8jpp5i7Q4XwkOACOaWGXudJsE9QF15fo1bejK2WkZJdLneO4O8n+WRIMSlBKIkP7jQn9UnOUBee45UMfMDihIxKROMUe5zx4Ck+eOq0Ne8zQGP6OHQfs1VNrIjdbg9qkXv/M+BDnHaIETsOiYVSl6qU5C7jCP5+tl/wjACDUkaBPPNhfh0mMHAI+HEsyhCeTTMKZ3p80JBfXoUQqmzIEUAcEpsfH+K3Rsbupg+4YJyn7XV+PSrKIXplomWsO2OhM/RJOQN/GMtcB3iGItKgxXFK5q8LhQCBN2JZ46gYkn1Tp8+HS8yS7LcFHiuGPFYMltarbsa2gLHVX3PrkxeglFtIslVZ2GArazKKEGnLynIgfz9h+3zvIIRZ4uxHDJixtuAUe7032+iV8Fi3+9WrZlYY3K//3K9z7y/e38cZRx1SkOzJoJ6nr4/g76f7RSgwueuMc+ZJoiI4s/Pq8vPe4o/t2+dfe1hmiCBVxx8AAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Among a series of high-class dining cruises in the magnificent and bustling Nha Rong Harbor, 𝑺𝒂𝒊𝒈𝒐𝒏 𝑷𝒓𝒊𝒏𝒄𝒆𝒔𝒔 is still attractive with its own appearance. It will take tourists along the Saigon River - This is the most beautiful river journey with the scenery of the modern riverside city: Vinhomes Central Park, Vinhome Golden River, Landmark 81, Bitexco Tower etc.</p>
+          <div class="meta"><span>🕒 18:00 – 22:00</span><span>💰 300k for 02 drinks, 02 hours cruising from 850k for set menu</span><span>☎️ 028 3514 6033 – 088 890 1068</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=SAIGON%20PRINCESS%20CRUISE%2C%20Nha%20Rong%20Harbor%2C%205%20Nguyen%20Tat%20Thanh%2C%20D.4%20%282.9km~8min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://www.saigonprincess.com.vn/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="shopping-mall">
+      <div class="section-title">
+        <span class="section-icon">🛍️</span>
+        <div><h2>SHOPPING MALL</h2><span>1 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>TAKASHIMAYA</h3>
+              <div class="address">📍 72 Le Thanh Ton, D1 (1.6km~7min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="TAKASHIMAYA" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmAQAAAADnvwB3AAADOklEQVR4nO2aQY7cOgxEn0YGspSBOcAchb7BP9IgN2MfJTeQlwPQqL+g3MkuHWD+H7cQo2EYMBesplQsllXE76/j5YEg+Bv1lVF7KaUsABzrDVi4lfVWVti3Ukop24WzfzDKJAFH2RgwrXbYt+PNq6R+6ewfudQNrMqjuaTarXbyIZpqp3aLq2b/WNTyy9MWC9qJ3Y7X/vHaj337srz+kyijORjcynpbyN8F8vqEqAUQLPsar1RRMN//8X2tHcHSxH7d7B+OupVSwL79eF/2rXYWWDD2bdm3o5SyXjr7h6KaJEXzaN+PlY+VgI+37/lakuQXzv6hS92iec27/OeL5pJH/gNXzf6Pekc0r1LtqJu6BQQWzdXR0/eOXI2qEhhNVZ4AJa/5bgqMgUVTlWgOxLirSqOgV83+YYxepSqv3aq8KtcnAM3VbYb9mKSKqSdeD1AnmjPPfvQAINkVDKhSNFe32qkz1NFzSzKgSSfSLG60CTAqAKwqScZqJ4uYkwgTcE4nmiSP5tE0CKe5pGhK2nl6jHLJc+5IOs1qBtAUTDA/ZtU0SLVb6gHJ1U2dKp+hP3YDUuQE1M5pC4x9OgPndGq3k0uNk0vPUtrz78cRtYD6jfY9YMFqvx0rZc1Z8vLZ/zaq+bEScKywvy8Qw6MzdYJbfFFenxd134+5aIdSzXucAROs1dqJpvKm482PN0kORNM36Zeo/z+vz4o65Tc25o5ONIENjdc0B6+OAYrhb9zHq7uT/PQYJXVSrNYOzaPprgoCm0MDZMlyWaqTuO6lnGFG7tByTTpwegLDvJrie8dL+v8fK8kz7CU9HGCBY7VJ+mNLnrGAKjGMR6UnOcVatZwWB4v+FOQWLf3z58coqVv2i8CyUd4hj1nyqtk/PiOnNK2nk5ySgOz+s/SOXJ+kvOmMb+XctevzYzwN//Hp/+yM0VQnmR85PRynieZ5HoCmYPRHnp5zXsa5jv29/tjYN7I57iVfp+C5cvaPXOe5DqWfk8s19eo94MnreGJMC27YOJx4T2P5qtn/YR29phhIkkl5A9kuJ8CYnmrKOdI0bh6nRzeFloPElWzTNE4FtKF/nl/Llb9nO6eI+hcqgxyjmLeXgAAAAABJRU5ErkJggg==" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Gucci, Prada, Hermes, Burberry Store.... VINCOM CENTER Adidas, Charles &amp; Keith, Calvin Klein, Nike, Zara Store...</p>
+          <div class="meta"><span>🕒 10:00 – 21:00</span><span>☎️ 0283 821 1819</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=TAKASHIMAYA%2C%2072%20Le%20Thanh%20Ton%2C%20D1%20%281.6km~7min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://www.takashimaya-vn.com" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="beauty-salon---body-treatment">
+      <div class="section-title">
+        <span class="section-icon">💆</span>
+        <div><h2>BEAUTY SALON - BODY TREATMENT</h2><span>2 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>MIU MIU SPA</h3>
+              <div class="address">📍 41/10 Nguyen Binh Khiem, D.1 (2km~7min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="MIU MIU SPA" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADkUlEQVR4nO2bQW4jOQxFX0UFZCnfoI/CulmQmzFHyQ1YywA0/iwoOZldBzDGHU0bRsFwEbBYFMn/P+VN/Nbr+vR7dvDX8E81RAHQAoVld0ByulqYwhQGgOVPcOY7hiaJLvrrDgrbz5cWb9cL1wvbhSYpHr3GOxuiMLAmlyrFrcnBmtTCEmtBi8ViPb0Oo0tSdtG9SYklZNeKXn8xPLfrduznxnkAO29gLf6Tn36EoeRAwt5fFTSJ88iuHXagKx+/xrsbvm3bBjyHtfeXHatYP78fLeA8rtu2XR69xjsbonqFSVLQ5E2iq8kTWn0vrZXX3Jpydm9hdAeaXEGOeo5Wq2ZInt0lJbSArmpeVceqedGXi7U8u+gqkFadC6gu1gqwred1WELBMwV0z+50rz5OgdX18loujZhmV2J0b/IWltCksf9/gjPfYh+KYhyeoJHRVpW8EGmut8NHXnuT0334SCFwqxLX1ou1vByXNOB3hVjKkfW2YKyDrKolLziq4JN+TqCynNdGlwqfdK9KrhigpdI8V1MVRvlqUpOXipLdJU8ozlV0ezWvw7J7XSuvbzW88n1NbFZ4O4aEUrmck5UkwJI1XJOAGAOQ241x0zW2/U9w5lteF9EoZ0smbUE9gdrtC+a1vIUNBM7I7hYDvShMC6KUJ+Djwg4K9v66A+dBV+nD24Udrtvx6DXe13CoCoVMsg+g0mabrlsrohRG8nafWQzA0IRhwRr+BHz8koI8X6pPVd3W+3G92McvNenj8vA13teQIQWPPuUKKx1paEdQeHWtWBfkHiOPEpFqCFKMu0n1Xs3rya0mUKm4l2Bo3AZAP8GZ76EUaUiCRbej9JP5TSzJr6200JrxqdhlIdKugi4L5rU8/6UtiO45pvbj7nKxfgLovkOTJwZvwH4e2X3v2i7QfT+Xw2ZyMAWDVJY8HqOs1dhrwWpWE715rTHf5Fw+c3y5vA5LyC8gPJmq0YCptqRuVpt8KEhdt9HenH+tya8H8P48fmM1BZj68IooZeJwBXTV5xn0oY2vGOs6q8DkmHXmipzD66rnq3kdAAW5m1QIrfT/KmVrzrmqVZUsDCPWQ0thYtQFvZ7xHcczYAgpOZ/Dgjh8nqhs8qIeY5Y9Rj/jwOFaXt8MLetM3fmyQ54H5/YctsP1wv6HrPFuhp95fWvTY9pVc65iJavF+rOGtzHgcyY++foo1vJ6+/sPiP+N4T/z2afLL6LpBAAAAABJRU5ErkJggg==" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">MULBERRY SPA &amp; HAIR STUDIO</p>
+          <div class="meta"><span>🕒 09:00 – 22:00</span><span>💰 200k – 1.150k</span><span>☎️ 028 6680 2652</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=MIU%20MIU%20SPA%2C%2041/10%20Nguyen%20Binh%20Khiem%2C%20D.1%20%282km~7min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://miumiuspa.com" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>HOUSE OF BARBAARD</h3>
+              <div class="address">📍 Sofitel Hotel, 17 Le Duan, D.1 (1.2km~3min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="HOUSE OF BARBAARD" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADn0lEQVR4nO2bQY7jOAxFnyMDWdI3qKPINyvUkfoG8lHqBswygIzfC1Lp2QxQ1ahGTTRtBIaTaKEfUuTnJ7OID13n5WPr4O/C/+pC5ADFK1R5hYq1Pu7yCkDtzwDmM6irpOJIDWvyWpxuit8BapHkk6G+AMuyA8vy2m87HJ26ctw3it46cFvW79/j1y4kvLpIxWtRk4M1OfHcTcUps9l6oPYqteJ0awDWitduLZx/OtQrIFjtbbEfUMv7VjoL3Nd8xsTtOcD8Rgz/txcwYQzPqxWvWCtSkYBO7aZu+fVsqL328SC18XGVA7Vbi4M/G2op2EiHTi1OUSuOpJKvhk1m6wuwwgpXr1enW+sQafrc6Bz3Ze+3/bv3+LULkVc5nZosdJzl4mAtPHw6bkaeZVM3BTMJby+OnG5Nan02D0cSGcnDt7MGkRqmMmj5bKidbq2oZaER4YuqPOPD/58BzKc8XA/HthbGlVpE8g5h8QlRe8WEqVODfmMtgEd9PaWHF6dTI3FDUNDM2kHYJmQpTqcOZtLSzwPycPIpPTyLyhSRsqbuWZLEwZ/Pw2vYOu/WOmAtUUvdNF0MvwBXtfvyGu+L530FrJ3LDkfxb9/j1y5MRgpgiixGEDO14o/KazIPv8CxUuXofT83zmUv0vnSgPvGuVU51/fJqo9LHOH18YGJ2w51WV6vflydFbq1JwHz0StKKjkRuIpTpPgpHl9NGMPVigO1eMKErDEJvZQZebhTvA7pLFk3QVQe1p+NpVyw1u1t2fL8RkwrTkgo620H7tuzgPnopUdfz6LErjyafWqaUzcj4lh0PYKE91GABC1PyvoMYD4bw7spDniKSGrZ7on+14yoQxD+Jfs7QwknmPmEamFYNt6klETAh+xslvnytYfyL3mNHi6WsrAUdp9SS4k2rhiiWQlKlopxS4d/BjCfUoYHHW0xpFEkTIzDPuOEBoNpp1gUUnDk6IcDTMnDNcjnGNVgMBZCKpwuml2AZav9thcHezu3Y7RxuWYjG26T1dcPblYjVRF3QgbPjDadrcesglcFMYtZBWs5kEOdNF9DioQ12polKxEpR1OYM4ZLo8RWRDZIlkKOMUyG+sJjtnA7zmVfqeeyhDp6Lov8WLbj6t++xz+08ABWe+O2F7VzY4XVBHRr58uEamGmaf2z6ZOTtGMqaTIPH7OFENmqdFI55Dhffqwdcezfu8c/GcMf0+CjtZfF14w9zeXvPyD+Nwt/AvQMmaQ1+i0hAAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          
+          <div class="meta"><span>🕒 10:00 – 21:00</span><span>💰 380k – 580k (include a drink and finger food)</span><span>☎️ 1800 7040</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=HOUSE%20OF%20BARBAARD%2C%20Sofitel%20Hotel%2C%2017%20Le%20Duan%2C%20D.1%20%281.2km~3min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://houseofbarbaard.com" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="casino">
+      <div class="section-title">
+        <span class="section-icon">🎰</span>
+        <div><h2>CASINO</h2><span>2 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>PALAZZO CLUB</h3>
+              <div class="address">📍 1st floor, Sheraton Saigon Hotel, 80 Dong Du, D.1 (1.3km~5min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="PALAZZO CLUB" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVYAAAFWAQAAAAAa1IguAAAEOklEQVR4nO2bTW4jOQyFP0UCvGQBfYAchXWDPlLQR5obyEfxARpQLQ2o8GZBycmyF+MZT1UEI45hLmiaP+89ykn86dnf/tgUvm3/r7ZbSikV2NO6L1eAbd3Tui8ABQqklFJaX8Tf59ii5pKypEbH1ejQTVjFagcs3vX+Cv4+y7YACWdbZEqQTKX9zA1tP/NtyW3pP2Bb8u/X8PeZcYiz//hLsJf1XtgL/b2lhf1d5ff6ZB9eytbzbU0LF/26NApeuHaruq1Y/bd8+A9tZ39oqJEbWGV2CTXHatYZ+sMbXFNK4AUHz7eP3Cj4pXmBfPtgW/eU0vIy/j7FFsVpHi9z846reVYdj+Zhcuh8ICKQVYFu6lZzi3dc0pihkA8fB1VFDki50U0zQ8BqNI1uh+8PSCMHOh5ZIVVw8EiVbsqNE9QF8ZGlitXoDJJiUnTIDal2O3ocpCxl1SzF3BwNobkaAKYOcIK6wGNkdIiAdByrHR8lY2eYF4xMwNVQi/5AbuTm3Wq3OoLzCv4+Fz/UblUDUrqadxuVAp4buXH0efHGtha43AaPuC+khcJ1X7xvSfoF3q0eH08275EVzXOjW9XskKNpBOM4fF00z80xZVU1xj+qo29IWKDuY9fFwJPxwaUaIzI3Z44SrJ6DX8RzZEXt+GDZFjC7Thp+gnxQnfTKA1JOMOlZ6qaA2QePQ/PAk7MixpQMQabjTIxx9DiE5jBKICtwtcfUiEYRSXKCODC/eu+zYwwtQo96OX4+xLffbYzLaIww0+AUffItcqBA2daCA/GyQ26eFkK+zqqv4u+zbK+XRuyt+pZmKPyi2rnCFehc2Y6+19OQFxSS7GwXD2muA6HfvoK/z8yHAmqUbb0v7O/1vqBG4Vqs6rZepNz8vryMv0+xHbiaB2SymlUxBQ0PUN3PwLNUA0R1EyZJg1w0CCRptdsZ9Mk6lxeTXKjmIFYQiYHpBPjBu4Uu7VkCMIUcx1Cl6qiaV/D3qXp1IyIQBSLVjufH/neCq4PHYYgPzlhpBdf41Cexeoo9jqQHx8SDUDxuCoU0J9UT9IfokFEgnlVDgwLGdm8mxsHjoDErH5uLQBEPsS4IyAnmpsAHggpeCSHPPsSo6JmHj0Os8x4Yspty869bzn58/SH2OB6cYn9XweF6XyjbGnv/YvWimm9H55uNudzXRBEadyEG0h63SQ+dD4Grg0kNDKnm8VdDsFVQ8qPHQd2UH4Dhc6kXK636eQviFfx98tyMCORBNj24Vew6532Ao+dDg+gJprjzkGPhC3luMWJ8HDoOb0Er2FLZUof7EoLk0CdDlOtcTzAvPNZYARgwzfuTcUfoPPrkOCV64y0FlsDqnta+fRSI7d6L+fvP2n7mwxeZOnY6GuQiIMTB+8Pn73HmIxiW4gJh3JbBdII4ADy02eAasdkEpghz+Pty6ft3i9+2X87fed5DcuGNKAcAAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">Palazzo Club is an electronic gaming lounge located on the first floor of the Sheraton. The gaming lounge is open 24 hours a day and offers a variety of slot machines and electronic table games. The games of chance are available only to foreign visitors and Vietnamese nationals with passports issued in another country. INTERNATIONAL TOURIST CLUB Located in the annex wing of New World Hotel Saigon. Inside the 33,000 square foot center spread over two floors you will find the Chat Slots Gaming Center with progressive, traditional, and video slot machines, a VIP roulette room, electronic baccarat, and blackjack tables. Additional attractions include the Catwalk discotheque, live band room, sing-a-</p>
+          <div class="meta"><span>🕒 24/24</span><span>☎️ 0283 824 7576</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=PALAZZO%20CLUB%2C%201st%20floor%2C%20Sheraton%20Saigon%20Hotel%2C%2080%20Dong%20Du%2C%20D.1%20%281.3km~5min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://www.palazzo.vn/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>long lounge, deluxe karaoke suites, massage, sauna, and steam bath club.</h3>
+              <div class="address">📍 New World Saigon Hotel, 76 Le Lai Street, D.1 (3km~8min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="long lounge, deluxe karaoke suites, massage, sauna, and steam bath club." data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYYAAAGGAQAAAABX+xtIAAAE70lEQVR4nO1cQY4iMQysbFrimP7BPMX8DO3PzFP4QfqIZFR7KKfhuodlW0qjOYCaSKTk2OUqZwrxd6/Xr79cAJwr5lsBdgCo9IChMRrRHI0BRHM9pZ4CgMUx9/GlFUYSwIJ7fZQFd3aw35fml8d1gQVs2W4AKsl+4H18ZUUpV2y3Sr5+WLu9VgBWO54/BHDpQPMFwFaWL/6qI694ruCjPEu5dLxKCaA+rtH8+fMbW6n9//yqY664PK5lBZrHdluAUm6v9f5acel4rvb68f/yq462gnR9IP3yuL1WBIz9vsAW3AN26agdSvgH3scXVtxLKfqgHH7puHQssNpRH7dluwLAdn2VUtYD7+OfrwD16kZ6pQcQsNqNHZUOIGDRPFp+cWLOAHYDUMnaDc1JBhD5CJWOxtoB5NfmxgokoxEAGgUaSXaEkGwMgPRKRpsdK3Fy0tktYDuTBwBYNAcgAGNq3q6DRsVP7RbNA0b6Dg47SFetnD6ussep3So9moeCLVtCIuMqc9r0WPk4dyOxN7K/e2fVQQBnHVRcsaN2RPPaMY6k+KchgfK5dQawAy0lFwGlKKr0aGQ3CRHj0dxxRUdjAgIoqHZw0FyZf+SuubHKfGVo4gyiUl67JD6guTiY0vvkWCl+1MXUbqnpNdaO2i1pKkzq6NxYoXaQ3OGKxkpmKUz+4GpzODlnIBValV6ZYjvp0Rgjq3NoMucZrBQxyOBBc70XYkAmMZy5XQ3O6Pg4ZBm1PICJwKv9mZ23qyMehHPvdCpdXWF8aFyz53aS2eshj1sXOEk+a/IuO3k7u/4yve8iTMCGRjoELimBx9zHF3m7QkjJPAk8icTHswK26XWGQaXENpNNDVKaoUVPIjp5HewaaUhFNIYyMwR2f/MrVcNj7uOLnGHYEC6eAOHWVBCZvPTUGbopsSuZK37YTWcQg1xVtY2T18EhqmeGz1NpyRyyW/RxQifH6j1kld5E88iHpoM5HEObPV91dTHvqqcjKe8m+8Em8WF6fiVpXW5gS7iiuaJImsNof84z6CIGGKIxkOiJLXCoytkSHnMfX9T6KrPvQ5IEB3aIHICIxOycga6R2pz92OnoxxhDVsB2zjMAOfjhKnySswAoZe3OhVywqbHK4SsZzVQUUVRBvL0PnfnMV3QAOyAymndJeagQOdx+8qtBsT5m/IY5KP9USQztnOuzGPxKprPSuAofcvzDADvnZJTb33NW2UrbrmJ96lonFx2Sgo9Jj7fVFR8TpKdHz9Edk2r9PCdA6PF+KiHCzzo4hpCZAx4d8fa/cuy2pv81N1ZyJXQMYWpzosmP8F3L0qW5sw4O6RhDe3lrC5F3CbMgnnUwR0NlQOfkvzzBMX+VXGt6/Yp5CyAahcaeo3LY421YTK9f6WTBIm1TzcP4mBdNd57DzZkcq132RNtbQgD44Ax5Q+fUGfbxD3nQcrjG7KguU+zEfmasfmErpZSl8VnKshVsRSl9AS7dynp/rvdlK7pRWMr1sPv4ygojia1cur1WsBu262tF4B7td2zXBYjG54o8iYfdxz9fofuD9hb08voSMEQtjWblhMPk+SqxGnfflKCQbtfuFe7W4YmVvD+xKQD5Ju9TpBeWFwyPuY+v6aLD8Nr1mUHdvY642hnF3FgBQxGteZFQs+6e2rIoaBui1jH38Y0V5fyfTueKf7DiDyhY0KpmhwwyAAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">VEGAS CLUB Vegas E-Gaming Club offers the latest modern slot, roulette, baccarat and blackjack machines with the most frequent mystery jackpot hits in Ho Chi Minh City. In addition, special events and promotions are featured daily. No matter if you are a high roller or just looking for some gaming actions, count on a rolling good time at Vegas Club</p>
+          <div class="meta"><span>🕒 24/24</span><span>☎️ 0283 822 8888</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=long%20lounge%2C%20deluxe%20karaoke%20suites%2C%20massage%2C%20sauna%2C%20and%20steam%20bath%20club.%2C%20New%20World%20Saigon%20Hotel%2C%2076%20Le%20Lai%20Street%2C%20D.1%20%283km~8min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="http://itclubsaigon.com.vn/index.php#" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="golf-course">
+      <div class="section-title">
+        <span class="section-icon">⛳</span>
+        <div><h2>GOLF COURSE</h2><span>1 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>TAN SON NHAT GOLF</h3>
+              <div class="address">📍 06 Tan Son, Go Vap (13km~36min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="TAN SON NHAT GOLF" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADoklEQVR4nO2bTYojORCFP5USailDH8BHCcMcrJibRR6lbhC5NMi8XoTk6k1DGbqnxupOjMlMC+yX8ffihVzEp47by+fWwd+F/9+FRymlbMBRNvYNYC+lcFw2do5LKaWUy5OA+fxCkwTQHLid9u14U1g57dcT5USVFF/9G3/xQhQGVoMONHVQQHNJCutYDWpYfwYwjy+0rQl4ld/ODmxQzv+mA/zmr/7vF27zZO/fdrFfC3DheAP6N2r8vq/+4oWS58WtXGpQpRpcS3kNNobbf/Vv/LULUQDUsJ+9AFgsrlEeQYfEWCVA8iqv42OthvoDqdGU3l41TrKo1fVQSzUmukBhVS55B7Cez6EthvoF9uvZt6N0uJ79duJ2yiTmCrbjUspbfV+MmyGpN3XoTYpRqjqmSFZmvfmC2Szdu6k3VYnmHevNaeqYpJ5P5hnAPJrNJAfrzSXvTTXIS7Caz+QZwDzm4XkSpMXT54He1Jt6Wv8ZwDzKUnoTLYuUZ0TTXGEZ5lqt+0BBRnEd/ebIYJnKakBbkaXIOwO45FmwNGw9769o6xpW5R2rYQqrP9hakuTL2fqFpuuJfry9xrh1PTtwPVFO+61cbuWNY0WWgtFU5TUs6Xf6fG9e79X8GcA8FNc1RpGaqIeHd0zyjq3IzbKDJkM7JaMaNuI9AFuyXifrZnAS1dGFDcFQsV69fqEplaL6Xmrsr+8XjsvtLGA7CrBhW/MnAfPZQwGjw3KaMqKrJjWdzddatmbSTrsL4ADNe/M+n8mKcW09+djkKgrm5ZCPlovrYesalnpRlY8ZUBtMVfIFUcs/EnVz7vmc9HORtfsZwDxk67tMmm0mkEbPhMai/XWCnanMFJbTvSGPLzjdG2wkKVnHUkVRWAosU0VcDnVQg471H0QkmCn9PtJ9BjCPZjNmmWaISMa0cpaz9VCPuJZo2Wwqs3dOvvqSLGX2kjSfsy0fvXZkC2YLVi7d9TFP7NlWTwHN16xc8jm1txQW5lzPh1Yca3p4Dndy5JF2zxHnSO9L2jq3ZGgwz3G3aQqn43I11GOvguXOhHwHG4x05LTlUAcM0Wzu0IiUTHP2YYPDPAOYx7oPqQajt2LsQRrWDxvCwjOAeVAjtYxicswH90F2esJyjPS+y47bKWrfayD2f6C+n3rzreu2WWmx1k7pD1sDOcHMzUhDLhsTkMVsPeM6FRV9hHZyszoz/HKoYUgHKQ77feJzr2jL5fDy9x8Qf8zC70eGqV9L1UGyAAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">A 36-hole golf course with PGA standard, designed by Nelson &amp; Haworth Golf Course Architects, one of the leading golf course designers in the world. It is located near Tan Son Nhat International Airport, enabling both foreign and domestic guests to have great time there. Also, Tan Son Nhat Golf Course is proud to be the first course established only in Ho Chi Minh City’s urban area. VIETNAM GOLF AND COUNTRY CLUB The first 36-hole golf course in Vietnam and is greatly recognized by Vietnam’s Premier Golf and Country Club. The course is among 300 ha of land. The West course first opened in December 1994, and was designed by Taiwanese architect Chen King Shih.</p>
+          <div class="meta"><span>🕒 05:00 – 21:00</span><span>☎️ 028 3987 6666 – 0946 660 088</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=TAN%20SON%20NHAT%20GOLF%2C%2006%20Tan%20Son%2C%20Go%20Vap%20%2813km~36min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://www.tansonnhatgolf.vn/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="family-%26-kid-activities">
+      <div class="section-title">
+        <span class="section-icon">👨‍👩‍👧</span>
+        <div><h2>FAMILY &amp; KID ACTIVITIES</h2><span>1 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>TINIWORLD VINCOM DONG KHOI</h3>
+              <div class="address">📍 Oxygen Shopping Mall, 628C Xa Lo Ha Noi, D.2 (7.5km~14min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="TINIWORLD VINCOM DONG KHOI" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVYAAAFWAQAAAAAa1IguAAAEI0lEQVR4nO2bQY7jOgxEn1oGspSBf4A+CnOzoG8mH2UO0AC9DCCj/oJSupez8UxG6cALW+GCVkokq8gk8buf4+23TeHH9t+0RQ6QnTbu5TSsgVSzkxWQsfYM/p5oa5IourgtRRQdq130AZZW7qsdK1mSP42/p9giN7AsgWWnFbUieaACSm1F2ck+PR4A2BPlo2HZufy6Aum9Uir7NR7/hA9/03bgwS2QkKXs9BUMiJXZ8YDcFG+q2iA7cpMjqa9IWdLk+/AGW0oJjP12cQNbYMGW/dpX9uuRUlqfxt9TbFF83HK/q2CRQIEsNSy+mBoPcQoMAAOTaqxnN7ll1VZqmE2+D6rxsv3CKDW7RWUVMbOVOnsd1aMipReNRI6IsFkERlErdX48uElVbtmJNEGJxGHZIzLUHJX2M/h7pu2Rrmnd7u9aSmW/NgCD7b5uC1taifrqafw9w5bHzw2ABRIgOEWPFZFEpsYDkiIq9kfv+xDhMcKm3GY/F0g1rhw3g3QHQlrRCB3T74NagN/pJZMTVUSAIegnZfo6Cork9CKhMyxGWOgSzfzxwY0iugClXkh7LxuyQ1GoE9PvQ6ODIbu1UoNNRORsRa1UitprnIusnh8bQcAtNAdKDd49/z6EvCBl7zn0u3JLUYSL+c+FFC8rjaxRxMinI3TY/PlCNSql7GQncmgbK5TaHqrdM/h7Nt/kwbb6Y3aLknJQ7/n3YQhQFkkzHrN6hOyCzOT15BuQnSXYxJ4uqtlZ4J5u9xXgWFmgPZG/Z9k2aHDx7XjXPV0hiPbGfqW3+TZKfRp/z7B9xAfoquz3jmcEDSJlTH0uiNqpBbOQQouTRCChRDZ5iT5OFJPZLYdYXSol1LlONF6gj0M0L0ZF3V+fkGo9pJgxCfAM/p6qPzxuBgaGOmeKTFrqK/RxQqkmOheKS8ExKTWU/PnPhVu8dTR8hwZVwfpXQNELnIuQYWFIEFlVAyGtKNSJF9gHhc7Qy2m3h0I1gBG9v9njgypFQ6kmB/1UzaOT1eeFJsfDGyDflv22lJqdY4X9eqTbsQJxWIhQ+TT+nmEbedNaQOJLmexzQT2T6gXig1tvc4cUOUSYYBmh0+bXiA9tTMXESgxC9JRRRHCu+XUYRoPboqHDgIGc71LM5PsQmO/DP12i7I3+4KHRvJgeD1L7Ls4PSHTNYczJzM4vui4XipP0kX1LaxRUXJyLb6HcpnR9Gn/PsF3YVyB/WnZScbC2sHxyrHb/z1OC1ZZP2vIc/p5oG/P2ddlT/nVN68ZQLImACY0ta359MqqmUGPyqKW7nv86+uT430FMBz1kGUDepwJeoJ78sj3eP47V2K/L4JjHe13KB2zLn/Lh79o+ZonlUD4eevWy3wD220vwLAfIYxokdiAU7C8aPn+fN/38b/HH9tvnf0c/DFkU3Uv5AAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">LILLIPUT VIETNAM (KID CAFÉ)</p>
+          <div class="meta"><span>🕒 09:00 – 21:00</span><span>💰 120k - 150k</span><span>☎️ 079 238 4110</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=TINIWORLD%20VINCOM%20DONG%20KHOI%2C%20Oxygen%20Shopping%20Mall%2C%20628C%20Xa%20Lo%20Ha%20Noi%2C%20D.2%20%287.5km~14min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="karaoke-%E2%80%93-cine">
+      <div class="section-title">
+        <span class="section-icon">🎤</span>
+        <div><h2>KARAOKE – CINE</h2><span>1 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>KARAOKE I-COOL</h3>
+              <div class="address">📍 135 Hai Ba Trung, D.1 (1.4km~6min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="KARAOKE I-COOL" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADv0lEQVR4nO2bTW7jOhCEP7oJeEneYI5C3czIzaij5Abk0gCFeoumnJldDATJmG8ILWSpAbPc/9V0EJ9ax+VzcvBP8G8VRA3AWoGiVqCQNM5LrQBQxiuAeQZ1kWSqaoVUSTJpUAZlABST1BZDfQFC2Oi3CPRNbb+HzRrWuDYG0EP8+T1+rSBu1SZJGmASYKpSNdWRZA1bUde+jhCuqrD7x9hv9Ju17/jqbxeMgCD2LBEC6jcbhNwA2OOAJPprgHlGcA8hQIl9s1bcu+19A6DQtyOEkH96j18siM7l0dt9nCS1MoA0367m132LEPI+4B6CGkcI9HBkIsXetyMT+/YiYJ4QPMKmBuwkxVStIVXS20h1gL1v9/zje/xaQdy2gZEqYK1IGqlKFfAKbdXabCRZK16C+r1f0ny+HGqG36gC5kEMvDiR6mBN1NbcvMug6KMIL2PWbHU5C794hxXnx52+XVUjXPVmqrAfGWuvAuazS6qua5Os8cjdM46l6hpfS9e4SVsrI3mvURwpzK7EWmE9v5ZIdaanVB8hfbIKqiPVsZpfI8n5kzNTey166npG+PVQV2tn1qbYTFWVVEnVGaQVM1eRqjXHi/8CJI1UcQv3LPYKYJ5D3cpIImk4bZgkVTX8uT9cDrXTpMVUz7AGqQ4Yk0EtS/r1oEzsqZpm4jYvySjT5V8BzFOC1ogU7zGPXOgbcM8M9msjwpF/fI9fK+gxvMiJ0HQyKrMF81dlOT4cST7+GJNP8MFXcYN/TEZWQ92mU/sEhDNlu4rlbr6aXz9qs+oUimvZ2oztaj4XWEzXF3rwyiSyA4Pdp10hlyOXSJn56zXAfHa5GQPeesy262y4PHEvGc1mqzVLcUwyeeKuJC9WF/PrCz1c37fw6w0IebdWxjR1Btj7bcARFuPDzxg++2gk1/tkC71aW7D7kFPfxceX8untaeGmao0VY/gW4TyWUEPGGcIjc88c4YaTxq8B5rPLeQMf0OM0+MmufFCF67EKqo7L9Ki63ew1UnUKcTnUF2CwR/Z75siETMgAR97pG5TIejNNH19KToY3nBc1ye8BFtT1b5W2D/XmtAtOTokl2UJfJ5ciyc7jZ4+jdwvm6wZn6HZmeBYnbRIO3pssh3qeLXSY55GzCXYes1zNwi/42UIgKWSscYTg9RhgbQ8Z+mIx/A/BSZM2jl914OVZ+Z6v/hnBfrtn6LfYb8DoW0z12nY8nv8de/w6wYdfz3Okk0eaA82PtZZff8RwZwhN9THvgDOwrxbDw79/QPxvBP8D5VCKrpsGwYgAAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">CINESTAR HAI BA TRUNG</p>
+          <div class="meta"><span>🕒 10:00 – 23:00</span><span>☎️ 028 7300 7279</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=KARAOKE%20I-COOL%2C%20135%20Hai%20Ba%20Trung%2C%20D.1%20%281.4km~6min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="temple-%26-church">
+      <div class="section-title">
+        <span class="section-icon">🛕</span>
+        <div><h2>TEMPLE &amp; CHURCH</h2><span>2 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>CHÙA NGỌC HOÀNG (JADE EMPEROR PAGODA)</h3>
+              <div class="address">📍 66 Dong Du, D.1 (1.3km~4min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="CHÙA NGỌC HOÀNG (JADE EMPEROR PAGODA)" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVYAAAFWAQAAAAAa1IguAAAEFklEQVR4nO2bTW4jOQyFP0UFZKkCciD6BnOkwRxpbqA6Sg4QgF4aoPFmQcmdZW/c7VF1IQjKNhcqmj/vPdJF/Ox1f/tpU/hj+/+0RQ5QpcDkVt3kFhBNUs+PALB4hfM+0Q8mqUrVkSMnQFK0TpPcaKqSfH0/gFU3Sfng1S1ar24ATdFUnbq4H7Z5c9w34oPSnOtRP/+6ffj2tXMt9evy5DO8lK1trb9/XupnKTtlZ+O47UTrtP6rzvAbbWd9cKRefb7jBvYoDieoD29wlFLAtuvfWSg22KA6G9TPC9fLvZSyv8x5n2KL8nICqjpN1U0+3q/qWUIlLR0P2S+o6lU9kYMcMLDAvhms7gf1wKQeTQzkoGi9epaOTuvRlq8P3+JfHQgIoCkyHlqXW3XWzwspHzbjIYNBbhkGMzCItrofnOpW1aVepWh9EIrWpR4AFq2vzy/UIx+59XxZ3apG1wBo/RTxoD7oA4DJqerzv0XLe52gX2g873BI+sQSSMCAlLF8XriRJKIpa0ViKoAmDVBhJ8gLjbaYOkwCSAfs0SkyNU7gB6tumRFZJKXRLBJHJeda3A+zSAZWpao+mOaAWD0b6Pp9M3NhUm+wZNmZFwNs+wniQT1aDzIpyMJI69k1UqjMfFncD27RVJWu4NEyUoZ6kK8T5AUagKHTFG0AywyPvKL1E+CHMcLIQpEoenCKNupG6lTL+2EIUM6DWD3kqSwOclaPhzeagA2779x3yx66YcBtt3fntrNhVf1Fzvss2+sFxrdf/dha3yA4ttbf/QDeneDgenmR8z7HdgNuGwXbgvuH3/Z/4ShYh3tBENejwPb1Gud9Jq6OIUMJUpoegkMqdQ8ssXR9GLwb7Jv0RHWSZcQED2fQJ7MvJJCoTkymCWTHHFrlK5z3qXqU+kTUGR48NMmUIGhieT84kV83g3jmf032fRbenfGgHliOsXKyM2d8RELN5f0wFoGsKudWSD2HGjEn/tU5Q17k985k3zFEyzEBzpsT6HI9IQSjZVCH/jDoxoNwre6H3ID6Id1neUxcketzp6gPiZeacnAzFghzg242i3qWeVauxnVmG00gMfboUrQ/hx++S/SZJjnWYe6Rro8ffCw8aDxvqtY89kjrrBWL+0H9MbgZs+853s2hxlgAWD8vknGTLWNgCWxOvQfdWB1HvTHl+vvOBvLjtlu+LDu3cim7yQ99rq1H/di3n4VxzDojGTdj+3r9vJj7tPWxATJ75ayZNmYcr3DeZ9qWcskKAJTd4Ci73cql7KRmmzcvc97n2sa1BET757YjPxJg33bbUpD5JWf4fbaP31+MhZDEDGNnLMsCU6h5hfM+uz5IuTtKSxFGPH6mlB+t7weYAvWI/6bcmJqMO//W9kP587vFP7bfrv8AUsJhYPKCWMkAAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">TEMPLE OF KING HUNG MOSQUE JAMIA AL-MUSULMAN</p>
+          <div class="meta"><span>🕒 04:30 – 21:30</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=CH%C3%99A%20NG%E1%BB%8CC%20HO%C3%80NG%20%28JADE%20EMPEROR%20PAGODA%29%2C%2066%20Dong%20Du%2C%20D.1%20%281.3km~4min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>NHÀ THỜ ĐỨC BÀ SÀI GÒN - NOTRE DAME CATHEDRAL</h3>
+              <div class="address">📍 01 Cong Xa Paris, D1 (1.4km~6min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="NHÀ THỜ ĐỨC BÀ SÀI GÒN - NOTRE DAME CATHEDRAL" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAW4AAAFuAQAAAACJ2c8iAAAEUklEQVR4nO1cMW4rSwzjRgu8cnyj8c2MdzP5KLnBbPkABfwFJTttChuLrwRBYMdTTASJEkltNuIHX18fPzkN/B7/Px4HFwAYHUBgkrQ1n5/q7VBmzTjV3V8emYxGACS5gOGBieEBcCGGx6CRXO0iA0yjk04yhnPNGA7MgD4iBm3BmkaGXBOALQSAQaUKANKjY2Tq+HHdh8fwEOYc237c9mMD8HV5+2VOcbxwhs6lwnm+eBwwNsSZD+C+bRuO2w7guNrn84WtaWvq7de2bZfz3f2Fx8H6UrOOwUeS2EIMN1LdnGSnnAHXtDWNbmvGIKuObM1AfhSYXDNGs8iQAAITg1QDGuSaGDS6whLDbaEZzqhr64VKCQFotFPa5G8w+83A0J8vqDG6rRyGSTcKZ9ASZ2DfyFEM59K8N61mP1sAuk16OQMHYGQkV0pGIAhiDjmIbtVEGh2YXMmejOSCZr8YrvqKwYY4wwWuyQUMojq1cEY1VTSzGc7QSS9O7RkNMkZKEzGSMvTr2gpOMaMKhZGKWAiWO/KmuV2wH9d/F/1mAneuotjD1ZiAO4af7u4vPA7S1YZsQalia6phYbgaU3GobjjDGP6UqgZZZQUkWShFolU1JTtISBkeg9L0lCekI2U9R7+csRI81bJFkQCwmEJKE70QGExa5KhsUYaoH6lxW3HwZpFx4a0mFqhqIK3GSapxsyECr4yJkUZ/DDMabEQwhT/N5hk82tC3WReAJpkZmvQANOTaNcA8f9Izf4Qw0oHXbKbPfODYAthxD2Aff4H71wU4rjiuO8Qx77YgB+Fsd3/lcVXTlOxgNbcoZ0hHIQzbeZQ5yyH5dTYmyKl8yMKAbO5OkfnAcQMmF/5d8OfzlmicP+/bZf5R5uC+v+EyJzqOrKPiCJUwZNlwRgLIIedUd3/HDDxVRygFL4bypLRxCcLdcGYVNRjOSh452jFS2ZMx1zEypfRasgMHNNX4kzWgIzuwlKfSqM08kY+wEohSFj7V3d8QmbIJ0tnX5tV4WpMo4tkrMkqYlZKvjAOji0MlOHdkB8qWb6qdECZjwpKCmcPeqe7++uN7fdvnto+/OG4yDuzzGpg4rsqo91zmNMcfAOuobSIlj0xJVDqJcXfKGYgq4ulfl+lfrkEML/BphjNragc4t6oAVNfWCzw8qX69KYYrFKoa1NMHtTnz3IbtFZnMmSnSxNL0ymliphPZcgZ2e0w1AKAtLIgjpMMi2fNUd389Asud1CJNcm3MHH2LVVnDPb2c/2cJd6k5yFhJrx9AQ0bJtPjzbeHMY/lKjzt13NNbQKq+j4JKfUZzbwxGgXOzyOSzKqVFMHv3SMtJtdaRUWoR4rkX7Y9HwEQQNBunEHqqu78nMom3WubMsJTfpAcJvR0CV85EraLVgr2roaef23B/JnFGNopqZ+ajpmWy5G5wu5wBandIknhaS8i3udOodbVT3f21x7ff/37we/yHx/8DoUgnGFy1nBkAAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">[temporarily closed – maintenance]</p>
+          <div class="meta"></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=NH%C3%80%20TH%E1%BB%9C%20%C4%90%E1%BB%A8C%20B%C3%80%20S%C3%80I%20G%C3%92N%20-%20NOTRE%20DAME%20CATHEDRAL%2C%2001%20Cong%20Xa%20Paris%2C%20D1%20%281.4km~6min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="historical-destinations">
+      <div class="section-title">
+        <span class="section-icon">🏛️</span>
+        <div><h2>HISTORICAL DESTINATIONS</h2><span>2 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>WAR REMNANTS MUSEUM</h3>
+              <div class="address">📍 135 NKKN, D1 (1.8km~7min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="WAR REMNANTS MUSEUM" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmAQAAAADnvwB3AAADQklEQVR4nO2aQW7sOAxEnyIDvZRvkKPQNwtyM/kofQN62YCMmgVlJ6sZB/iD2MbXpmU0F1WQSBZJJfHfa307YAR/rX7PCjlAdgPkJjeKspQluQFg7azoD3M0SVm1FTWsFVEkCWilM704xzcgpYllejynh2r2Wc+0joABLGn4NVx/ymrov0UstGVsA2D5mcTMMv0arv/Fah7KJ0UPB+YBG774XwD9v6/uj04rVU52k1srNUvSbfxxTimBPZ4fAwYM8Hh+sEzDMq0ppfHU6I8s9VXj7MAig8j3v3Txc0RuWaKolSpJDpgcuUUqyZe/q0hq0LAGragRjmlyesa8gwbom2DXBY+UFQS5fsxBUnaTKkXZiXubFfuanTv4oyqlhkBtRdlpEYjcclzjcgeOcmtAEVhWzRKlUnqwvYUmJ0dohYZl1YZBiAGC++U5Sl3hSOxSJzzRUdQjZ0X/E38UkJ1wxuw0TE5WbXCLu2rfUqRt0abuifIeGiBH+nBrpTZs6wkg1ZA6l+foX0eZHTbflFuUyXfQAE52gJ4lHeihpu8vz/GNcEO3/JzWNK2jyUkjLFNEnnU8NfqDVgMMzK+RrM/4ZPmAeR0Z4OHnRn/EqtQIqgO8RrSlj8eWSl7v9cToD60uZmKVCoA1IuzE/ur+2DVAKwLr3QCni/NeNd+AY88aPaiWLu3iNG/B8Y0lZdXXSIPXaI15gPSuBll1TYlyA3+0ViqlS5ooryh92NGlzlnR/6TX8a0L5zSMUltMPYruoMk3NwyCcXytVOjx9g69DierSorrCoBF8biXzNfn2N0w8kWkjL0J0FuvZ0V//K6GP7aiVmq/pVE5qsY48gYc5caW+uMQ4/Y2rHdZz4r+Bzon6g5F1U8vQ6Qgfv2Y88by0SC91wYDRK2RRtYRlmkdSWk6MfpDa0uLtk83+r7oa7hzVvTHtVxKaWCGeWB++FYzLlN2+jT5vOgPrf1dRy+p3KL7ESqux9uzoj/OEWx/kBPSbm+xRji6OMcvq7ZMaZzTGGdXc5/11OvPyjerZRrKZwyq0vsnsKa0jram9Lu4/oTV93dWlVL39wDsA+XL58f9vRzRIc8eb+fCJbnFHDn9fdt5C6t/ANzQDjePs3ArAAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">INDEPENDENCE PALACE</p>
+          <div class="meta"><span>🕒 07:30 – 17:30</span><span>💰 40k per visit</span><span>☎️ 028 3822 3652</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=WAR%20REMNANTS%20MUSEUM%2C%20135%20NKKN%2C%20D1%20%281.8km~7min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="http://www.baotangchungtichchientranh.vn" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article>
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>SG CENTRAL POST OFFICE</h3>
+              <div class="address">📍 02 Cong Xa Paris, D1 (1.4km~6min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="SG CENTRAL POST OFFICE" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADq0lEQVR4nO2bTW7kOAyFP7UM1FIG5gA5inyDPlIjN6OPkgMMQC8DsPBmQdmzTRo1SErTgldlLvTMv/coVREfWvcfH7ODP4bf1/AopZQFOMrCvpwvysp93Tm2Ukop25OA+bhhlwQ7zYD7ui9Hua979b2+bWWlSvKv3uODDZF36NU7QBP0/D2a5D3o1ane4xnA/IZhNKu+R3uVQ7Obs5wB8G32+CjDK493jk1wi71AdTh+vv9l1b/BHv+bCJdUHXmv3qNZlaBLVp0qVUkTRvheSoGeXr+9/eLYqrMcv6BzbPdSyvrVe3ywIcrlRFOVqoavqyz9nmsuX2cNp0oBkl3FPBtWcL59BjCf8vVIalk0RbOAyBjwHk3jeQYwn/E1MdpTDzp0Odm181PM2K+RFE2JNP2b8OUZ9j0gmA61QxMt65hJJhnNaAJokmzCvPaeWRz0aJZBftW0rHUT5rUEVCcYQqNKtPwIiqFNpotwWWZ0NmvoVaLZ6GLNoE/HzUaHygYNJN5UW9EslciMeZ3AR+FipHZ2NGVZmzGvLdFFSq2zUwNVJkmyGRkp1bsc+dmjm9EsmqoT9PE8A5jPRbj37M7JSE9386/YnLCaWZUyyLN2BVQZbaitbN+zofae6RyDeJ+UzKnnq+k61w/Y39cu5+bQDPYqcRROBi7fv36PDzdsujkLRLNSNo6NY6vSwr6wA0uOWZ4DzEfXUFs5QGhjfnKSNEvxNWPnGsmb5Xr82ozRs2DKziVL5jkEJtm+h4vPYel0qAe6pCvQTN6loa9zXDwhalmcDC1OwXUpTcnqlFMF2TUIrU4005gJJz9XtDn1dZXFoKNKsGMw7j3alGcfaDBtGJwESamp5chJzjYb6lHK+pndnMdbRirQKfW196DTlEGe6iOaZf/KlJ8SdXKwc1yWsvqU24l9PtTKwdHwdZb061wvSdqUnSs79QhsjXOuDPUkbDNWM8vBQlYwec/RSoY3UOeMcEuMVxlPv5/ZnbxlOtTnNYxoFm1oruTemexMen6tQUg65xgtM/0anzJfhDuMuwrDudV7lQYbT6fPxsN/jLuFx3Zz9FYWoBnHthzbLQ80s6Q/CZiPG5ayAe8vr2XtVbqXQnu9v+heSrCXlZt/+R4fa3jdsuP2908dK6ULoOsoNF9C92Xnxae9Kd1ey4tV30sp95Wy9jjK+7ovTfVt+yZ7fJDhebfwvIA0ZoN5nivl2wm5mQOXwLTrECTI6dm4dDcX6vLnHxD/G8N/AMj3pW1b51/sAAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          
+          <div class="meta"><span>🕒 07:30 – 17:00</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=SG%20CENTRAL%20POST%20OFFICE%2C%2002%20Cong%20Xa%20Paris%2C%20D1%20%281.4km~6min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="pharmacy-%26-hospital">
+      <div class="section-title">
+        <span class="section-icon">🏥</span>
+        <div><h2>PHARMACY &amp; HOSPITAL</h2><span>1 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>FAMILY MEDICAL PRACTICE</h3>
+              <div class="address">📍 13A Le Thanh Ton, D.1 (250m~1min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="FAMILY MEDICAL PRACTICE" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADvElEQVR4nO2bzW0jOxCEP6oH8JHKQKFwMtiQFs6sFYoDWIBzNNCDeofmyG9vFqAHrfh2oIMs9YEl9k9VkS7iW89++l4c/A38UwNRB7DeoKk3aFRFVVS3np8ALV4BzD2omyTrzeRRXb1ZB5pJJuUb9clQn4BSVmAv67KtC9egUd8/ywrXALayPH+Njw0ks9ok66g3daiujnUkjyrr2Ix7DbCVz4tTfb+IbV2q7+e2n7H+B63xsYGSU32h7WW1j9Uksstt6wJUxfPX+PDAaymF7ad9rG+dBdhWtp8LvPXGtu6llPOz1/jgQPT1eNAkN4nqAdZb1PHdXHWNegu4DWu7DWha0NRHu5sNtRTVbwCjyuTQAqgyKWhRp9trKdGNrlUluaQjtz1Jy3yoc5dNHqCOOiZXb1SZPOp83IxBQTOZq5KlZIFnyUf1CTO8j1cAELSAbOZRZZL1xnyoJZOb3HqzVCISx9ga3WzGus4OFrRUlzm2cpZZh+rT8XBuhUxV0Eyjk1tv6qm7ma6uTwDbGoe9sJ9ZaGxlvzhVANUnVJo5kat0FHVUQYMGWGdQ01cAcycPTx3dgBxVppTY7fBYJsvw5CRjQlnPzW1RPaqbZHLqnOrDhgABmjojt+WZ52mmzYc6NVcOa8lhmEi3H2HCed1JdIOoKBNbOvjJjErzlNu6QMB+ef88D/8Ergu8HV+9CJjvPuotrdEb604bPJVmapBJuxlAmsDJVTgsxCz56TKcnMvZxJKi3ISn8uwjJecrgLmzm5FHAMm9dSS5Dfk5417Lx7ZWj+RmNyIqz6qfjpud2Fa2ddlKkjSqv/WWGiRg4bqAfawvAubbgVWfZ4IGlDNvHbhKHsC2Avvl/elrfHRgcrN20O+0Rl1SuoUM03jCuo7qNyJq8jzNTCEWR5OfDvW4mWKdhJnKizpQM6GXwnG8JcZRNccljXQbfNq9rhpis7odMuRW1MMmfQUw9/nh44jHb9bo8EUZb6bsZkm5D32dZd7ioOIj4V8BzF2oGb26xXEFK3P+tyR/BTB3+2Z5rANRHfhK7AyacK+Vx5pRXZ1x4lNHzo8TkBn3mtRc0lcDH5/4IcQm62YncljTSilDV1aHtl8ElDMB+/nZa3xw4AKUtIKDUrVw3Qv264eg0LSdC1j/8RJg7lIfaSCYPP80jb79r04+X10fNyrzVkaOsDz7SBdxQj98AQQL7OcOWFyXX9eF1YLPpe0XN1Geu8b/JDDvFpbYVmA/D69sLyXvGe6lqD97jQ8OLH//A+J/E/gPcaJ8bX9NZeAAAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">PHARMACITY</p>
+          <div class="meta"><span>🕒 06:00 – 23:30</span><span>☎️ 1800 6821</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=FAMILY%20MEDICAL%20PRACTICE%2C%2013A%20Le%20Thanh%20Ton%2C%20D.1%20%28250m~1min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://www.vietnammedicalpractice.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="medical-service">
+      <div class="section-title">
+        <span class="section-icon">🩺</span>
+        <div><h2>MEDICAL SERVICE</h2><span>1 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>DYM MEDICAL CENTER</h3>
+              <div class="address">📍 1st Floor, MPlaza, 39 Le Duan, D1 (1.1km~6min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="DYM MEDICAL CENTER" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADmElEQVR4nO2bQW7kOAxFn0IDtVQBc4A5Cn2zRh9pbsAC5iJ9A3kZgMGfBWVPLxMgg3Rp2qiFnRJQ/pL4+fmpNPGu6+3lfePg98Bfd+DRWmsbcLSNxwZAuwOP7Wgce2uttf1JwLz30nBJpjBJUvawgQbZZQpwkzQ8nwHMh1CD23AgewD0MEV2ZVfiNrDVUP80sGs7dlPYj/3tzu3HfhsPah5+mXf8pIHbefPQsYP/fezcsQGQx67x3/30Fw+UAmh3ErKHSW9tz/59q0npyq9/x08f+GitgdvgNtiObxy71Q3Osb+11u5f/Y6fPBDVNVwDuoq0bbL6JHZJa7FZcTgnuigaNynxBEnz8RnAfGitTUrQ8IRa4srX4Nllg+zLoR6UMrFRtOZSmIIuG04Pk5bL10jKriu6s0fi4BpuquWOZDnUA7roMQVJn7q0ElZNxoJxPc6PVJu8Fh0oRUqPBeNaSqCHFCZlDw2nB4UX1/AVd7gXUhtVaFA34InPRLYem5352lS2its5Dyr4fVGV0id9SVVce8X4yXIrolZUEc3pMFRE08Xk8FjSVcgu1RIPbKbvyC7O3L0gm6k0mEySYrL3mdFs+kvL7fBR8iw0yBItOEwSk5T4iqj9MkyS6aIUszHj3ZeL6xd4bHgtdJF2pbDWvmmQuMbj69/xkwfOuJ4crrCSK1JW0X09PgOYj1UftYd7VIVVpVZV2fXVgvn61J+FNIvK8OSSprBg5polRu3qYrCiOKnCfEWVMr3Bs6buUSZDSZQ5IeuhHhS6UinV5Co5Sld1u1aM67OR13Xt7eK07LLhlbiXQ10hHOUelEVsY8pvppG4GOoNoKv1vxoArw0g/xjwuOnhxz03j+M5wHyQw5me//SHq4fLZS+sWHPFqbeZFoom5Ct9L8dmLxy79P31z5C04Rtsx35TJLzeuc0myLOAee9V5SQzeUX2yB6XCK9yezk2K98syk7JHuWHV1OguJ0lex8KqTodfrZ0/XKTABvr1ddckE1BDzsb2ZplJqv2uS4dbsOz/tpny6+eFqyvZzeT0yKLmoSK6NrtC/a5BlSzfvjpjbtJ5ZqWtbKcDn8Bl8Sxv945Dx0Fx64fLXkkJCv6ZvNs4bQXznMpcWZqls3Xp39ybW+TismnwbJgXM9zpKawgVUxUs7h1Q5Yca3rzPC0SXtUpE/5Pc3S9VADzH69Av49V2nV+KuzZ88A5t0D2+//gPjfDPwHSprEOar5XY0AAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">JIO HEALTH</p>
+          <div class="meta"><span>🕒 07:00 – 20:00</span><span>☎️ 1900 636 893</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=DYM%20MEDICAL%20CENTER%2C%201st%20Floor%2C%20MPlaza%2C%2039%20Le%20Duan%2C%20D1%20%281.1km~6min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://dymmedicalcenter.com.vn/en/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="convenience-store">
+      <div class="section-title">
+        <span class="section-icon">🏪</span>
+        <div><h2>CONVENIENCE STORE</h2><span>1 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>GS25</h3>
+              <div class="address">📍 11A Le Thanh Ton, D1 (300m~1min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="GS25" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmAQAAAADnvwB3AAADP0lEQVR4nO2aXYrrSAyFP3cZ8ljeQZai7KzJzpSl3AUMyI8BmTMPstPzNDfDNLRtbhEKE/Sgg/6OpBrE78/y8YYQ/JH6OSkUAC1oYUBiktO9SQoDwHKv2r+N0SQ1Kbu3sBaAZZfk2VVIT4ARrEktUNDkTS5JQXaVfQ+OcZOab8vVx+7P4Zbz5zLclquYbz+u1/dKtV+3ZaIFw8TIY5yHcRd6/X+pLR6DxOpWIHmyxunx4/EDHsMwgF2CukdsnD8vwTjflmEYpl1r/5ZUl6SE7E6/LxMJz+v9OQFIknzH2r91FFapVWG5lkvLroQmL4GD+ypV8SUHWliTsqsKZUKVleNjVHY1eWLZPbvT1SS6sjtAPz7GWG9JWWRAklxRpE46gx2dLjAwurewhOwrz1l/e9X+P/gqJLbdlt2bvIUpVrMeHmNYGVFSdl+LCFZeCpwB40pmoHu1G1U7Kq9m9zPUjvLJ6qq6t6AFlXO+8u1etX8fY25uCbaGYdDkCSfJq8VzuitQMfPib9212vT4GLemGCyhPhQUr2vyM9SOsKyvSqdQSTW/6MHR4/EDGDfDvfpH5mHsvkymYOxH7zs+gIQRRix5tGDkUWm2BSM8p31r/57UCIm1Xze6gITles/5c5jI8t49a//GkXybN3rbKshWSqAI3l61f5/n0L2GORsHMLoDxVfP0Fu9an1QhOfFBNZScgKM1Uy9GpCupnUsAJxlLsfY/RLA4xLGfHtONkKNzZ/D7ef0+i4pJJd82+xYdmddfNi6DjgBlwuD4mzewnKdCWwsjlPw1eI2W4MM0FWzjso/Z+CrUjHVajEU67ij2pDKsWfAiEnetg6rRsd0P1F91GukUxxAYQUzixucIB7lZceKxyr6QP0JnCEew3Kz4IaOV4RyFr5am/G2LiJr9KEWtvaSh7fjB/MwDMOIPa935ttzokjOcr1X/5g/pNf3Sb3edXhTzTdW2yk2Zn54O27vOmo/Xosqyle/BE6CUVrfIL22q319sXN8LveSejynR3a/xONSQ4B5AIPHMh1A+389I6BtZnX5a2KgzZOwHG3k9hxpsV/t3+fkVFeF/WMlV9ROWe8E9qr9e1LDn7edp5D6GwyN+iBYRwT7AAAAAElFTkSuQmCC" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">MINISTOP</p>
+          <div class="meta"><span>🕒 24/24</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=GS25%2C%2011A%20Le%20Thanh%20Ton%2C%20D1%20%28300m~1min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="motorbike-for-rent">
+      <div class="section-title">
+        <span class="section-icon">🏍️</span>
+        <div><h2>MOTORBIKE FOR RENT</h2><span>1 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>SAIGON MOTORCYCLES</h3>
+              <div class="address">📍 182/5A, De Tham, D1 (3km~12min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="SAIGON MOTORCYCLES" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADYklEQVR4nO2bQYokOQxFn9sBs3RBHaCP4rzaHGluoDzKHKDBuRxQ8mchOXpmMZC5aSbUbYqiMsJQfCxLX/8rm3hpPb+8tg9+bfz/bny01toBPNrB/dgv2sf92RqPW2uttdtFwLy6tKakLusySQzrCx/WJS1gdklr+hXAvIUaZl8T8GEODn2hNX3ImX3Ry6KGIUk+pEWXdakvfKgi6u8b/dFaa7+te/sA8uj7+hH/+odv3Pd6Tcm6zIf6+XHRpaL3GqCv+V8/AJRDHWvhwIhkLpgMEZlcklQN9ZpAl/kwH5ZPh0WK8yGg10MduZrJMCCASybJmVG4fRRE7UlF8CGtqQXD4u94XjCbKQDiw3Te4iAqMpgOXi+bLbpEwCeQ4sNInhYVrVyEL+Jen0UKZhA2H9JmaOVQT4cu04Kh+J2EfKhLGedXAPNmDs/DzYIlY1icciT2gtls0aMBkdjdVl8zScsK6lIwwmFKxpD2KTto5aEzStZrCyIKU4tUGLLdjjpmBSNccmZEdaAOehZszZkwK9brubN3oLZIaJLFlY9mpB7qKFUkQ0ti1tcMihIVvB7qvoiyFX0lwMYbrwpmsxVBnupZdBzRXAdJq9h9fGHogAOcuzPhzuPW/7xp4dyBg3kMuwiYlzc+2vMDB+D59ff2VQx7ftDajaHz1UXAvLqSeXIy0v18pTAOFMxmkg/TIsUEonDPkEmjzSx3r9PXOtwO1/MThh3AsOfnH88D/1x/Nfq3a4B5T0vZTKxLIRsyRDLSzcyvAOYt1Kfgn3KZLNSkaD0i7OuhJqp2yoZpfwTYcEbK3et0Adgdh6d+aFs1zfxWDzVbRwo3Mx9GYG/htBrq0FJ2+uorIZ9KOKNkfx1WZnocYWhyasLbuy+HWqkGK/360E+CnGz9sFyEyxR6uMy3JrxNHyter2VOKic5kTJSPQt5oR7qlP2HomqHBxQ+V9/Fqxrqf45hMJ20s/OIAepN43yfVQBCQUo7IHLamhnwVwDzlqrQWjuiPD1uMU/IMB6ttRvRlT1uFwHz6tozSETxijp1auOhm1W81zlb2FfK4BD9Vw4WUvJen6hl2jbftq0tRknL3et/zZFu8T8HSgNvTR6+Z4ajw0pXa/vXvaZuds4W0neb6bvxpOysQvv1DYifZuPft6LS+whc9iAAAAAASUVORK5CYII=" aria-label="Show QR code">QR</button>
+          </div>          <p class="desc">DRAGON BIKE</p>
+          <div class="meta"><span>🕒 09:00 – 17:00</span><span>☎️ 0909 283 280</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=SAIGON%20MOTORCYCLES%2C%20182/5A%2C%20De%20Tham%2C%20D1%20%283km~12min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://www.saigonmotorcycles.com/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+    <section class="category" id="mobile-service">
+      <div class="section-title">
+        <span class="section-icon">📱</span>
+        <div><h2>MOBILE SERVICE</h2><span>1 recommendations</span></div>
+      </div>
+      <div class="grid">
+        <article class="place-card">
+          <div class="place-head">
+            <div>
+              <h3>CELLPHONES</h3>
+              <div class="address">📍 136 Nguyen Thai Hoc, D1 (3.5km~11min by taxi)</div>
+            </div>
+            <button class="qr-btn" onclick="openQR(this)" data-name="CELLPHONES" data-qr="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+AQAAAAA8Q0GdAAADjklEQVR4nO2bTWojSRCFv3QUaJmCPsAcJQvmYD7ZQOgovkHUUpDizSIy1Vra4Eat7C6MkUoBqkf8vXiRKuJT1+3tc3bw1/D3NTxKKWUDjrJx2QAupRSOfePCsZdSStlfBMxnL0WTZJJJknp1i6ZoQK8OzSRF668A5kuooVkA9KoO4zVN0TrNAlsN9TZftP9+xO0oJm4//N9+OYkCVN+e/oy/0vAUl412LWU7do732xnF8Puv/uqnGEoOlw5wOUUz6Xamc9kyFKr685/x2w0vpRRo2/Fu0QCO3YLTxzs0jv1WSjk/+xm/2RDlFZgkeRZti2ZyyJuStFY1yxqOSVTdi7lJCqh+/3Q11KNTu4IOvcrkkkveab061amLoX7jKNeyb1DOmNyC65lS9g1OwXbsCvSxIDfrVZ3WqxiJ7J1m0SQfH7EYS0FySRYoSEYKrVf16j0ZmnzFvHYLFM2iZVInFyUJalXeXw61LLCgZ62uo3p3GjmJSEtGeHoTskl5r27SHTiZ+68A5qsRbtFMKau0DglcgQKqVsxrSd6rUyW5yTto+nreXxC1RUuMmnoCw9dNg8AsGOFUKVo2ryxoPZlqpvaS/TroQFWW63EzSenM9wXzOhp1kJPk5HdmoocpbEHUANmyH2YuuUW+XTPCLZoCk5s84xkaVbO+LdmvZdGmW/mZy9FmlWus6GumTycVzz9PvGMqeQUwX+Xhic7kyUupnoxl2bxWdmeADsO5MVw8lJYF89ot0rmyICUFSVnNRgyshzqYMzVDFw2oAvocu1bN66xdJr/v9ZKp9uqZ7GuhfuMoOV1ez/TjvZxRtA2g2Uc5fbxfzyheBcxnLw1JASCFweTkSc7z5pJ5zUMlz4oNKFp2LuUU9gpgvuTrsd5KcXhKRkCvus+b66Hu2bayW81ZO4WUZGsr1vDZryNXuuSWZ4R6HtJYMa8f1P6x3mIMnqm0rBjhytbsJqf+DHJNTm6xJA/3qaUMKWkKSuN/ryuqhUHOlfdgBu6qQtosmNfzrAJT/J9aiivF4WC5/fVgKZbbzOowtJRce6XMslxev6U0ylFOQT92gOoc+ylaJ8v75fnP+M2GD2cLk5ilu8e+fpw3Wy6vHwyPfVJxh3b6KFRdz63D9R//TZ7xmwzvvh5r3DyJdBdSMgBW7Fy58vBxYHgeMxv7PvmaulkA5HGFHC3H3CEpGBraajW8/P0FxB9j+D+Pb6MkQ5AcBAAAAABJRU5ErkJggg==" aria-label="Show QR code">QR</button>
+          </div>
+          <p class="desc">ĐIỆN THOẠI VUI</p>
+          <div class="meta"><span>🕒 08:00 – 21:00</span><span>☎️ 028 71010 136</span></div>
+          <div class="actions">
+            <a class="maps" href="https://www.google.com/maps/search/?api=1&amp;query=CELLPHONES%2C%20136%20Nguyen%20Thai%20Hoc%2C%20D1%20%283.5km~11min%20by%20taxi%29" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+            <a href="https://cellphones.com.vn/" target="_blank" rel="noopener">Website</a>
+          </div>
+        </article></div>
+    </section>
+</main>
+<footer class="footer">
+  <div class="wrap">Nicecy Guest Guide · Recommendation List</div>
+  <div style="opacity:.75;margin-top:6px">Information and recommendations are based on the supplied guest recommendation list.</div>
+</footer>
+<div class="modal" id="qrModal" onclick="if(event.target===this)closeQR()">
+  <div class="modal-box">
+    <img id="qrImage" alt="QR code">
+    <h3 id="qrName"></h3>
+    <p>Scan with your phone camera to open this place in Google Maps.</p>
+    <button class="close" onclick="closeQR()">Close</button>
+  </div>
+</div>
+<script>
+function openQR(btn){
+  document.getElementById('qrImage').src=btn.dataset.qr;
+  document.getElementById('qrName').textContent=btn.dataset.name;
+  document.getElementById('qrModal').classList.add('show');
+}
+function closeQR(){document.getElementById('qrModal').classList.remove('show')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeQR()});
+</script>
+</body>
+</html>
